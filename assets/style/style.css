@@ -79,6 +79,7 @@ header input::placeholder {
         margin-block-end: .5rem;
     }
     header input {
-        inline-size: calc(100vw - 2rem);
+        inline-size: 90vw;
+        margin: 0 3vw;
     }
 }
