@@ -3,36 +3,82 @@ body {
     letter-spacing: -1px;
     font-size: 3rem;
     background: radial-gradient(white, rgb(0, 105, 195));
-}
-
-.container {
-    display: grid;
-    place-content: center;
-    text-align: center;
     min-block-size: 100vh;
 }
 
-.container h1 {
+/* modal */
+
+.modal {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-block-size: calc(100vh - 8.1rem);
+}
+
+.modal h1 {
     margin: 0;
     text-shadow: white 2px 2px 2px;
 }
 
-.container h1 span:first-child {
+.modal h1 span:first-child {
     text-decoration: underline;
     text-decoration-color: rgba(0, 105, 195, .5);
 }
 
-.container h1 span:last-child {
+.modal h1 span:last-child {
     font-size: 6rem;
 }
 
-.container p {
+.modal p {
     color: white;
     margin: 0;
     text-shadow: rgb(0, 105, 195) -2px 2px 1rem;
 }
 
-.container a {
+.modal a {
     color: rgb(0, 105, 195);
     text-decoration: none;
+}
+
+/* header */
+
+header {
+    padding: 1rem 3rem;
+    display: grid;
+    border-block-start: 1px solid rgba(0,0,0,.25);
+    place-content: center;
+    grid-template-columns: 280px auto;
+    min-block-size: 6rem;
+    background-color: rgba(0,0,0, .6);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+header input {
+    cursor: not-allowed;
+    padding: .25rem;
+    inline-size: calc(100vw - 280px - 6rem);
+}
+header input[disabled] {
+    background-color: #ccc;
+}
+
+header input::placeholder {
+    color: #aaa;
+}
+
+@media (max-width: 720px) {
+    header {
+        text-align: center;
+        grid-template-columns: 100vw;
+    }
+    header h1 {
+        margin-block-end: .5rem;
+    }
+    header input {
+        inline-size: calc(100vw - 2rem);
+    }
 }
