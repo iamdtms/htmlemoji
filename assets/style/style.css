@@ -1,0 +1,38 @@
+body {
+    font-family: 'Stint Ultra Condensed', serif;
+    letter-spacing: -1px;
+    font-size: 3rem;
+    background: radial-gradient(white, rgb(0, 105, 195));
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-block-size: 100vh;
+}
+
+.container h1 {
+    margin: 0;
+    text-shadow: white 2px 2px 2px;
+}
+
+.container h1 span:first-child {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 105, 195, .5);
+}
+
+.container h1 span:last-child {
+    font-size: 6rem;
+}
+
+.container p {
+    color: white;
+    margin: 0;
+    text-shadow: rgb(0, 105, 195) -2px 2px 1rem;
+}
+
+.container a {
+    color: rgb(0, 105, 195);
+    text-decoration: none;
+}
