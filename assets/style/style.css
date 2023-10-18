@@ -47,13 +47,16 @@ header {
     display: grid;
     border-block-start: 1px solid rgba(0,0,0,.25);
     place-content: center;
-    grid-template-columns: 280px auto;
+    grid-template-columns: 300px auto;
     min-block-size: 6rem;
     background-color: rgba(0,0,0, .6);
 }
 
 header h1 {
     margin: 0;
+    color: white;
+    text-shadow: none;
+    letter-spacing: 1px;
     font-size: 3.5rem;
 }
 
@@ -71,11 +74,15 @@ header input::placeholder {
 }
 
 @media (max-width: 720px) {
+    body {
+        font-size:1.5rem;
+    }
     header {
         text-align: center;
         grid-template-columns: 100vw;
     }
     header h1 {
+        font-size: 2rem;
         margin-block-end: .5rem;
     }
     header input {
