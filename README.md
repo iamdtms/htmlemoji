@@ -1,1 +1,1 @@
-# htmlemoji 😎
+# HTML emoji 😎
