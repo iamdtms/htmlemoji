@@ -50,15 +50,15 @@ header {
     grid-template-columns: 300px auto;
     min-block-size: 6rem;
     background-color: rgba(0,0,0, .6);
-    background: linear-gradient(0deg, rgba(113,173,220,1) 0%, rgba(0,0,0, .6) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .6) 100%);
 }
 
 header h1 {
     margin: 0;
     color: white;
     text-shadow: none;
-    letter-spacing: 1px;
-    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-size: 3.35rem;
 }
 
 header input {
@@ -67,7 +67,7 @@ header input {
     inline-size: calc(100vw - 280px - 6rem);
 }
 header input[disabled] {
-    background-color: #ccc;
+    background-color: white;
 }
 
 header input::placeholder {
