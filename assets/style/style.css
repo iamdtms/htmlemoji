@@ -17,7 +17,7 @@ body {
 
 .modal h1 {
     margin: 0;
-    text-shadow: white 2px 2px 2px;
+    text-shadow: white 2px 2px 0;
 }
 
 .modal h1 span:first-child {
@@ -50,6 +50,7 @@ header {
     grid-template-columns: 300px auto;
     min-block-size: 6rem;
     background-color: rgba(0,0,0, .6);
+    background: linear-gradient(0deg, rgba(113,173,220,1) 0%, rgba(0,0,0, .6) 100%);
 }
 
 header h1 {
