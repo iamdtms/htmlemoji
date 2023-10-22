@@ -2,8 +2,12 @@ body {
     font-family: 'Stint Ultra Condensed', serif;
     letter-spacing: -1px;
     font-size: 3rem;
-    background: radial-gradient(white, rgb(0, 105, 195));
     min-block-size: 100vh;
+}
+
+a {
+    color: black;
+    text-decoration-color: rgba(0,0,0,.5);
 }
 
 /* modal */
@@ -11,6 +15,7 @@ body {
 .modal {
     display: grid;
     place-content: center;
+    background: radial-gradient(white, rgb(0, 105, 195));
     text-align: center;
     min-block-size: calc(100vh - 8.1rem);
 }
@@ -27,6 +32,7 @@ body {
 
 .modal h1 span:last-child {
     font-size: 6rem;
+    text-shadow: black 2px 2px 0;
 }
 
 .modal p {
@@ -89,5 +95,57 @@ header input::placeholder {
     header input {
         inline-size: 90vw;
         margin: 0 3vw;
+    }
+}
+
+/* main */
+
+main ul.list {
+    margin: 2rem;
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    list-style-type: none;
+}
+
+main ul.list li a {
+    display: block;
+    max-block-size: 100%;
+    font-size: calc((100vw - 24rem) / 6);
+    text-decoration: none;
+}
+main ul.list li span {
+    margin: 0 1rem;
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 1280px) {
+    main ul.list {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    main ul.list li a {
+        font-size: calc((100vw - 14rem) / 5);
+    }
+
+
+@media (max-width: 720px) {
+    main ul.list {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    main ul.list li a {
+        font-size: calc((100vw - 14rem) / 3);
+    }
+}
+
+@media (max-width: 380px) {
+    main ul.list {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    main ul.list li a {
+        font-size: calc((100vw - 10rem) / 2);
     }
 }
