@@ -10,12 +10,12 @@ a {
     text-decoration-color: rgba(0,0,0,.5);
 }
 
-/* modal */
+/* modal (first-view) */
 
 .modal {
     display: grid;
     place-content: center;
-    background: radial-gradient(white, rgb(0, 105, 195));
+    background: radial-gradient(#ffb02e, #8d65c5);
     text-align: center;
     min-block-size: calc(100vh - 8.1rem);
 }
@@ -27,12 +27,12 @@ a {
 
 .modal h1 span:first-child {
     text-decoration: underline;
-    text-decoration-color: rgba(0, 105, 195, .5);
+    text-decoration-color: #8d65c5;
 }
 
 .modal h1 span:last-child {
     font-size: 6rem;
-    text-shadow: black 2px 2px 0;
+    text-shadow: #8d65c5 2px 2px 0;
 }
 
 .modal p {
@@ -42,13 +42,13 @@ a {
 }
 
 .modal a {
-    color: rgb(0, 105, 195);
+    color: #4f2769;
     text-decoration: none;
 }
 
-/* header */
+/* .pageheader */
 
-header {
+.pageheader {
     padding: 1rem 3rem;
     display: grid;
     border-block-start: 1px solid rgba(0,0,0,.25);
@@ -56,10 +56,10 @@ header {
     grid-template-columns: 300px auto;
     min-block-size: 6rem;
     background-color: rgba(0,0,0, .6);
-    background: linear-gradient(0deg, rgba(0,0,0, .3) 0%, rgba(0,0,0, .6) 100%);
+    background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
 }
 
-header h1 {
+.pageheader h1 {
     margin: 0;
     color: white;
     text-shadow: none;
@@ -67,40 +67,45 @@ header h1 {
     font-size: 3.35rem;
 }
 
-header input {
+.pageheader input {
     cursor: not-allowed;
     padding: .25rem;
     inline-size: calc(100vw - 280px - 6rem);
 }
-header input[disabled] {
+.pageheader input[disabled] {
     background-color: white;
 }
 
-header input::placeholder {
-    color: #aaa;
+.pageheader input::placeholder {
+    color: #321b41;
 }
 
 @media (max-width: 720px) {
     body {
         font-size:1.5rem;
     }
-    header {
+    .pageheader {
         text-align: center;
         grid-template-columns: 100vw;
     }
-    header h1 {
+    .pageheader h1 {
         font-size: 2rem;
         margin-block-end: .5rem;
     }
-    header input {
+    .pageheader input {
         inline-size: 90vw;
         margin: 0 3vw;
     }
 }
 
-/* main */
+/* .pagecontent (main) */
 
-main ul.list {
+.pagecontent {
+    background: linear-gradient(180deg, #8d65c5 0%, white 100%);
+    padding: 2rem 0;
+}
+
+.pagecontent ul.list {
     margin: 2rem;
     padding-inline-start: 0;
     display: grid;
@@ -108,44 +113,66 @@ main ul.list {
     list-style-type: none;
 }
 
-main ul.list li a {
+.pagecontent ul.list li a {
     display: block;
     max-block-size: 100%;
     font-size: calc((100vw - 24rem) / 6);
     text-decoration: none;
 }
-main ul.list li span {
+.pagecontent ul.list li span {
     margin: 0 1rem;
     text-align: center;
     display: block;
 }
 
 @media (max-width: 1280px) {
-    main ul.list {
+    .pagecontent ul.list {
         grid-template-columns: repeat(4, auto);
     }
 
-    main ul.list li a {
+    .pagecontent ul.list li a {
         font-size: calc((100vw - 14rem) / 5);
     }
 
 
 @media (max-width: 720px) {
-    main ul.list {
+    .pagecontent ul.list {
         grid-template-columns: repeat(3, auto);
     }
 
-    main ul.list li a {
+    .pagecontent ul.list li a {
         font-size: calc((100vw - 14rem) / 3);
     }
 }
 
 @media (max-width: 380px) {
-    main ul.list {
+    .pagecontent ul.list {
         grid-template-columns: repeat(2, auto);
     }
 
-    main ul.list li a {
+    .pagecontent ul.list li a {
         font-size: calc((100vw - 10rem) / 2);
     }
+}
+
+/* footer */
+
+.pagefooter {
+    margin: 0 auto;
+    border-block-start: 4px solid rgba(255,255,255, .5);
+    background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
+    color: white;
+}
+
+.pagefooter a {
+    color: white;
+    text-decoration-color: rgba(255,255,255, .5);
+}
+
+.pagefooter p {
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: right;
+    padding-inline-end: 4rem;
+    padding-block: 2rem;
 }
