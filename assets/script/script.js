@@ -1,3 +1,5 @@
 $(function () {
-  //console.log(input);
+  $('.emojis a').on('click', function () {
+    return false;
+  });
 });
