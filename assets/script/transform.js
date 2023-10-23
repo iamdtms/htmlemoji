@@ -9,11 +9,11 @@ $(function () {
     $(this).attr('href', '#');
   });
 
-  $('td').each(function () {
+  /*$('td').each(function () {
     if ($(this).hasClass('name')) {
       $(this).remove();
     }
-  });
+  });*/
 
   $('tr').each(function () {
     $(this).children('th').parent('tr').remove();

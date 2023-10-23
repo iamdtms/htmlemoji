@@ -117,7 +117,7 @@ a {
 
 @media (max-width: 720px) {
     .pagecontent .demo {
-        font-size:3rem;
+        font-size: 3rem;
         line-height: 6rem;
     }
 }
