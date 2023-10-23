@@ -51,6 +51,12 @@ a {
     text-decoration: none;
 }
 
+@media (min-width: 720px) {
+    .modal h1 {
+        line-height: 8rem;
+    }
+}
+
 /* .pageheader */
 
 .pageheader {
