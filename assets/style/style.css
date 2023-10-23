@@ -23,11 +23,16 @@ a {
 .modal h1 {
     margin: 0;
     text-shadow: white 2px 2px 0;
+    line-height: 6rem;
 }
 
 .modal h1 span:first-child {
     text-decoration: underline;
-    text-decoration-color: #8d65c5;
+    text-decoration-color: #b665c5;
+    background-color: white;
+    word-wrap: break-word;
+    padding: .5rem 1rem;
+    box-shadow: 6px 6px 0 #8d65c5;
 }
 
 .modal h1 span:last-child {
@@ -38,7 +43,7 @@ a {
 .modal p {
     color: white;
     margin: 0;
-    text-shadow: rgb(0, 105, 195) -2px 2px 1rem;
+    text-shadow: #8d65c5 -2px 2px 4px;
 }
 
 .modal a {
@@ -82,7 +87,7 @@ a {
 
 @media (max-width: 720px) {
     body {
-        font-size:1.5rem;
+        font-size:2rem;
     }
     .pageheader {
         text-align: center;
