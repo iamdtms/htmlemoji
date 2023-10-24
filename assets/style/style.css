@@ -218,7 +218,7 @@ a {
     }
 }
 
-@media (max-width: 240px) {
+@media (max-width: 305px) {
     .pagecontent .emojis {
         grid-template-columns: repeat(1, auto);
     }
