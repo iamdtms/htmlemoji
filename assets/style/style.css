@@ -26,6 +26,17 @@ a {
     line-height: 9rem;
 }
 
+.modal div {
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 50%;
+    block-size: 5ch;
+    inline-size: 5ch;
+    line-height: 5ch;
+    padding: .2rem;
+    margin: 2rem auto 0;
+}
+
 .modal h1 span {
     text-decoration: underline;
     text-decoration-color: #b665c5;
@@ -40,6 +51,7 @@ a {
 .pagecontent {
     background: linear-gradient(360deg, #8d65c5 0%, white 100%);
     padding: 2rem 0;
+    line-height: 1.5;
 }
 
 .pagecontent p {
