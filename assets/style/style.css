@@ -12,6 +12,10 @@ body {
     min-block-size: 100vh;
 }
 
+::selection {
+    color: var(--base);
+}
+
 a {
     color: black;
     text-decoration-color: var(--base-alpha);
