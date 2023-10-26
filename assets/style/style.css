@@ -28,14 +28,15 @@ a {
 }
 
 .modal h1 {
+    font-size: 6rem;
+    line-height: 8rem;
     margin: 0 0 2rem;
     text-shadow: white 2px 2px 0;
-    line-height: 9rem;
 }
 
 .modal div {
     text-align: center;
-    background-color: var(--invert-alpha);
+    background-color: var(--base-alpha);
     border-radius: 50%;
     block-size: 4.4ch;
     inline-size: 4.4ch;
@@ -197,8 +198,12 @@ a {
 }
 
 @media (max-width: 580px) {
+    .modal h1 {
+        font-size: 4rem;
+        line-height: 7rem;
+    }
     .pagecontent .emojis {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, calc(50vw - 1rem));
         font-size: 3rem;
     }
 
@@ -208,9 +213,9 @@ a {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 392px) {
     .pagecontent .emojis {
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(2, calc(50vw - 1rem));
     }
 
     .pagecontent .emojis > div {
@@ -220,7 +225,7 @@ a {
 
 @media (max-width: 305px) {
     .pagecontent .emojis {
-        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(1, calc(100vw - 2rem));
     }
     .pagecontent .emojis div {
         font-size: 3rem;
