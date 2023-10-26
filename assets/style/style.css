@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-    color: var(--base);
+    background-color: var(--base);
 }
 
 a {
