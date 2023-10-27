@@ -17,7 +17,7 @@ body {
 }
 
 a {
-    color: black;
+    color: var(--invert);
     text-decoration-color: var(--base-alpha);
 }
 
@@ -82,6 +82,9 @@ a {
     line-height: 6ch;
     text-align: center;
     color: var(--invert);
+    margin-block: 1rem;
+    padding: 2rem 0;
+    background: radial-gradient(var(--base), var(--invert));
 }
 
 .pagecontent p strong {
