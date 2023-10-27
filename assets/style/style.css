@@ -71,7 +71,7 @@ a {
 .pagecontent {
     /*background: linear-gradient(360deg, #8d65c5 0%, var(--base) 100%);*/
     background-color: var(--base);
-    padding: 0 0 1rem;
+    padding: 0;
     line-height: 1.5;
 }
 
@@ -81,10 +81,10 @@ a {
     inline-size: 100%;
     line-height: 6ch;
     text-align: center;
-    color: var(--invert);
-    margin-block: 1rem;
+    color: var(--base);
+    margin-block: 0;
     padding: 2rem 0;
-    background: radial-gradient(var(--base), var(--invert));
+    background: linear-gradient(90deg, var(--invert), var(--base));
 }
 
 .pagecontent p strong {
