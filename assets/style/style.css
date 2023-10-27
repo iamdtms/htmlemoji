@@ -80,6 +80,7 @@ a {
     margin-inline-start: auto;
     inline-size: 100%;
     text-align: center;
+    color: var(--invert);
 }
 
 .pagecontent p strong {
