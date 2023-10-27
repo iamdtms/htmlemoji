@@ -24,11 +24,11 @@ a {
 /* modal (first-view) */
 
 .modal {
-
     position: relative;
     background-color: var(--base);
     text-align: center;
     min-block-size: 100vh;
+    border-block-end: 6px solid #b665c5;
 }
 
 .modal > div {
@@ -79,6 +79,7 @@ a {
     display: inline-block;
     margin-inline-start: auto;
     inline-size: 100%;
+    line-height: 6ch;
     text-align: center;
     color: var(--invert);
 }
@@ -88,6 +89,7 @@ a {
     background-color: var(--invert);
     color: var(--base);
     padding: .5rem 1rem;
+    margin-inline-end: 1rem;
     letter-spacing: 1px;
     box-shadow: 6px -6px 0 #8d65c5;
 }
@@ -126,6 +128,7 @@ a {
 }
 
 .pagecontent .emojis > div > span {
+    z-index: 100;
     background-color: var(--base);
     color: var(--invert);
     text-shadow: none;
@@ -144,6 +147,11 @@ a {
     font-size: 2rem;
     /*max-inline-size: 15vw;*/
     text-shadow: 1px 1px 0 rgba(255, 255, 255, .6);
+}
+
+.pagecontent .emojis span::selection {
+    background-color: var(--invert);
+    color: var(--base);
 }
 
 .pagecontent .emojis span:after {
@@ -170,7 +178,7 @@ a {
 
 .pagefooter {
     margin: 0 auto;
-    border-block-start: 4px solid rgba(255,255,255, .5);
+    border-block-start: 6px solid rgba(255,255,255, .5);
     background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
     color: white;
     padding-block: 2rem;
@@ -186,10 +194,6 @@ a {
     letter-spacing: 2px;
     text-align: center;
     padding-inline: 2rem;
-}
-
-.pagefooter p:first-child {
-    margin-block-end: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
