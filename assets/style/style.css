@@ -79,7 +79,7 @@ a {
     display: inline-block;
     margin-inline-start: auto;
     inline-size: 100%;
-    line-height: 6ch;
+    /*line-height: 6ch;*/
     text-align: center;
     color: var(--base);
     margin-block: 0;
@@ -89,12 +89,11 @@ a {
 
 .pagecontent p strong {
     text-transform: uppercase;
-    background-color: var(--invert);
-    color: var(--base);
-    padding: .5rem 1rem;
+    background-color: var(--invert-alpha);
+    padding: 0 1rem;
     margin-inline-end: 1rem;
     letter-spacing: 1px;
-    box-shadow: 6px -6px 0 #8d65c5;
+    /*box-shadow: 1px -1px 0 var(--base);*/
 }
 
 .pagecontent .emojis {
