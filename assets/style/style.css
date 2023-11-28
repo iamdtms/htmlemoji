@@ -75,9 +75,8 @@ a {
     line-height: 1.5;
 }
 
-.pagecontent p {
+.pagecontent .text {
     display: inline-block;
-    margin-inline-start: auto;
     inline-size: 100%;
     /*line-height: 6ch;*/
     text-align: center;
@@ -85,6 +84,17 @@ a {
     margin-block: 0;
     padding: 2rem 0;
     background: linear-gradient(90deg, var(--invert), var(--base));
+}
+
+.pagecontent .text em {
+    color: white;
+}
+
+.pagecontent p {
+    margin-inline: auto;
+    inline-size: auto;
+    display: inline-block;
+    text-align: left;
 }
 
 .pagecontent p strong {
