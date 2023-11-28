@@ -88,6 +88,7 @@ a {
 
 .pagecontent .text em {
     color: white;
+    white-space: nowrap;
 }
 
 .pagecontent p {
