@@ -225,7 +225,11 @@ a {
     }
 
     .pagecontent .text {
-        text-align: center;
+        font-size: 2rem;
+    }
+
+    .pagecontent .emojis > div > span {
+        font-size: 1.6rem;
     }
 
     .pagecontent .emojis > div {
@@ -237,10 +241,6 @@ a {
     .modal h1 {
         font-size: 4rem;
         line-height: 7rem;
-    }
-
-    .pagecontent p {
-        text-align: center;
     }
 
     .pagecontent .emojis {
