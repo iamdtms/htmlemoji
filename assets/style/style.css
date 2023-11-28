@@ -239,6 +239,10 @@ a {
         line-height: 7rem;
     }
 
+    .pagecontent p {
+        text-align: center;
+    }
+
     .pagecontent .emojis {
         grid-template-columns: repeat(2, calc(50vw - 1rem));
         font-size: 3rem;
