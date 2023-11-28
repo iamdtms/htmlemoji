@@ -223,6 +223,11 @@ a {
     .pagecontent .emojis {
         grid-template-columns: repeat(3, auto);
     }
+
+    .pagecontent .text {
+        text-align: center;
+    }
+
     .pagecontent .emojis > div {
         font-size: calc((100vw - 16rem) / 3);
     }
@@ -233,6 +238,7 @@ a {
         font-size: 4rem;
         line-height: 7rem;
     }
+
     .pagecontent .emojis {
         grid-template-columns: repeat(2, calc(50vw - 1rem));
         font-size: 3rem;
