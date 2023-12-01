@@ -12,8 +12,6 @@ body {
     min-block-size: 100vh;
 }
 
-/*.container { overflow-y: hidden; }*/
-
 ::selection {
     background-color: var(--invert-alpha);
 }
