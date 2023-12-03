@@ -91,6 +91,10 @@ a {
     padding-inline: 1rem;
 }
 
+#query label >span {
+    line-height: 4rem;
+}
+
 #query input[type=text] {
     border: 4px solid var(--base-alpha);
     background-color: var(--base);
