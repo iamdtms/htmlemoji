@@ -168,7 +168,6 @@ a {
 }
 
 .pagecontent .emojis > div {
-    display: grid;
     /*display: block;
     text-align: center;
     max-block-size: 100%;*/
@@ -201,7 +200,7 @@ a {
 
 .pagecontent .emojis > div > div {
     display: grid;
-    place-content: end;
+    place-content: space-around;
 }
 
 .pagecontent .emojis span {
