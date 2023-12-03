@@ -80,7 +80,6 @@ a {
     text-align: center;
     padding: 1rem 0;
     background-color: var(--invert);
-    border-block-end: 6px solid #b665c5;
 }
 
 #query label {
