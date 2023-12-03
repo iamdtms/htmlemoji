@@ -85,8 +85,8 @@ a {
 #query label {
     display: grid;
     color: var(--base);
-    grid-template-columns: 40% 60%;
-    padding-inline: 2rem;
+    grid-template-columns: 20% 80%;
+    padding-inline: 1rem;
 }
 
 #query input[type=text] {
@@ -259,6 +259,9 @@ a {
 }
 
 @media (max-width: 1200px) {
+    #query label {
+        grid-template-columns: 100%;
+    }
     .pagecontent .emojis {
         grid-template-columns: repeat(6, calc((100vw / 6 ) - .5rem));
     }
@@ -296,9 +299,6 @@ a {
 }
 
 @media (max-width: 580px) {
-    #query label {
-        grid-template-columns: 100%;
-    }
     .modal h1 {
         font-size: 4rem;
         line-height: 7rem;
