@@ -67,13 +67,41 @@ a {
 }
 
 .modal p {
-    color: var(--invert);
-    background-color: var(--base);
+    color: var(--base);
+    background-color: var(--invert);
     border-radius: 2rem;
     padding: 0 1.5rem;
     inline-size: auto;
     margin-inline: auto;
     display: inline-block;
+}
+
+#query {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--invert);
+    border-block-end: 6px solid #b665c5;
+}
+
+#query label {
+    display: grid;
+    color: var(--base);
+    grid-template-columns: 40% 60%;
+    padding-inline: 2rem;
+}
+
+#query input[type=text] {
+    //background: rgba(0,0,0, .2);
+    border: 4px solid var(--base);
+    text-indent: .5rem;
+}
+
+#query input[type=text]::placeholder {
+    background-color: var(--invert-alpha);
+}
+
+[disabled] {
+    cursor: not-allowed;
 }
 
 /* .pagecontent (main) */
