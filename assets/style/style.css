@@ -95,7 +95,7 @@ a {
 }
 
 #query input[type=text]::placeholder {
-    background-color: var(--invert-alpha);
+    background-color: var(--base-alpha);
 }
 
 [disabled] {
