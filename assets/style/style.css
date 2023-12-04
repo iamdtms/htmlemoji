@@ -79,20 +79,22 @@ a {
 #query {
     box-shadow: inset 0 5px 0 var(--base-alpha);
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
     background-color: var(--invert);
     border-block-end: 6px solid #b665c5;
 }
 
-#query label {
+#query span {
     display: grid;
     color: var(--base);
-    grid-template-columns: 20% 80%;
-    padding-inline: 1rem;
+    text-align: left;
+    grid-template-columns: 50% 50%;
 }
 
-#query label >span {
+#query span > label {
     line-height: 4rem;
+    text-align: right;
+    padding-inline-end: 1rem;
 }
 
 #query input[type=text] {
@@ -108,9 +110,7 @@ a {
     color: var(--invert);
 }
 
-[disabled] {
-    cursor: not-allowed;
-}
+[disabled] { cursor: not-allowed }
 
 /* .pagecontent (main) */
 
@@ -276,9 +276,6 @@ a {
 }
 
 @media (max-width: 1200px) {
-    #query label {
-        grid-template-columns: 100%;
-    }
     .pagecontent .emojis {
         grid-template-columns: repeat(6, calc((100vw / 6 ) - .5rem));
     }
@@ -298,6 +295,12 @@ a {
 
 
 @media (max-width: 780px) {
+    #query span {
+        grid-template-columns: 100%;
+    }
+    #query span > label {
+        text-align: center;
+    }
     .pagecontent .emojis {
         grid-template-columns: repeat(4, calc((100vw / 4 ) - .5rem));
     }

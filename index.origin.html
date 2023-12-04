@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://htmlemoji.cloud/media/image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://htmlemoji.cloud/media/image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://htmlemoji.cloud/media/image/favicon-16x16.png">
-    <link rel="manifest" href="https://htmlemoji.cloud/site.webmanifest">
+    <link rel="manifest" href="htmlemoji.webmanifest">
     <link rel="mask-icon" href="https://htmlemoji.cloud/media/image/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -36,7 +36,10 @@
             </div>
         </div>
         <form action="#" id="query">
-            <label> <span>HTML emoji filter:</span> <input disabled type="text" placeholder="Under development..." title="Under development..."></label>
+            <span>
+                <label for="query-input">Filter: </label>
+                <input disabled type="text" placeholder="Under development..." title="Under development..." name="query-input">
+            </span>
         </form>
         <main class="pagecontent">
             <div class="emojis">
@@ -1689,7 +1692,7 @@
         <footer class="pagefooter">
             <p>(CC) 2023 <a href="https://iamdtms.hu">iamdtms</a>. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Some rights reserved</a>.</p>
             <p>Based on <a href="https://unicode.org/emoji/charts/full-emoji-list.html">Unicode® Emoji List v15.1</a>.</p>
-            <p><a href="htmlemoji.cloud-20231203T231610.html">Google Lighthouse</a> report available.</p>
+            <p>Google Lighthouse <a href="htmlemoji.cloud-20231203T231610.html">report available</a>.</p>
         </footer>
     </div>
 </body>
