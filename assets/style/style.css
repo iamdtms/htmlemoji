@@ -66,7 +66,8 @@ a {
     box-shadow: 6px 6px 0 #8d65c5;
 }
 
-.modal p {
+.modal p,
+main p {
     color: var(--base);
     background-color: var(--invert);
     border-radius: 2rem;
@@ -115,6 +116,7 @@ a {
 /* .pagecontent (main) */
 
 .pagecontent {
+    text-align: center;
     /*background: linear-gradient(360deg, #8d65c5 0%, var(--base) 100%);*/
     background-color: var(--base);
     padding: 0;
@@ -243,6 +245,12 @@ a {
     border-inline-end: 0.3em solid transparent;
     border-block-end: 0;
     border-inline-start: 0.3em solid transparent;
+}
+
+main > p {
+    text-align: center;
+    margin-inline: auto;
+    display: inline-block;
 }
 
 /* footer */
