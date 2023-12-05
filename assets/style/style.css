@@ -210,6 +210,7 @@ a {
 }
 
 .pagecontent .emojis span {
+    hyphens: auto;
     position: relative;
     margin: 0 1rem 0;
     text-align: center;
@@ -231,17 +232,17 @@ a {
     bottom: -2.5rem;
     left: calc((100% - 2rem) / 2);
     right: 0;
-    height: 2rem;
+    block-size: 33px;
     width: 0;
     background-position: bottom center;
     display: inline-block;
     margin-left: 0.255em;
     vertical-align: 0.255em;
     content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent;
+    border-block-start: 0.3em solid;
+    border-inline-end: 0.3em solid transparent;
+    border-block-end: 0;
+    border-inline-start: 0.3em solid transparent;
 }
 
 /* footer */
