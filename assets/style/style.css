@@ -148,6 +148,25 @@ main p {
     padding: .25rem;
 }
 
+.pagecontent .parts section {
+    line-height: auto;
+    letter-spacing: 1px;
+    background-color: var(--invert);
+    padding: 1rem;
+}
+
+.pagecontent .parts section h2 {
+    color: var(--base-alpha);
+    margin: 0;
+    font-size: 2rem;
+}
+
+.pagecontent .parts section h1 {
+    color: var(--base);
+    margin: 0;
+    font-size: 3rem;
+}
+
 .pagecontent p {
     margin-inline: auto;
     inline-size: auto;
