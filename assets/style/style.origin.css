@@ -148,23 +148,44 @@ main p {
     padding: .25rem;
 }
 
-.pagecontent .parts section {
-    line-height: auto;
+.pagecontent .parts section > div {
     letter-spacing: 1px;
-    background-color: var(--invert);
-    padding: 1rem;
+    /*background-color: var(--invert);
+    padding: 1rem;*/
 }
 
 .pagecontent .parts section h2 {
-    color: var(--base-alpha);
-    margin: 0;
+    color: var(--base);
+    letter-spacing: 2px;
+    background-color: var(--invert);
+    margin: 0 auto 1rem;
+    max-inline-size: fit-content;
+    padding: 0 1rem;
+    border-radius: 2rem;
     font-size: 2rem;
+}
+
+.pagecontent .parts section:last-child h2:last-child {
+    margin-block-end: 1rem;
+}
+
+.pagecontent .parts section h2:last-child {
+    margin-block-end: 0;
 }
 
 .pagecontent .parts section h1 {
     color: var(--base);
-    margin: 0;
+    background-color: var(--invert-alpha);
+    padding: 0 1rem;
+    border-radius: 3rem;
+    margin: 0 auto;
+    max-inline-size: fit-content;
     font-size: 3rem;
+}
+
+.pagecontent .parts section hr {
+    margin: 1rem;
+    border-color: rgba(255,255,255,.2);
 }
 
 .pagecontent p {
@@ -192,10 +213,14 @@ main p {
     /*line-height: 4ch;*/
     letter-spacing: 1px;
     text-shadow: var(--base) 2px 2px 0;
-    padding: 1rem;
+    /*padding: 1rem;*/
     display: grid;
     grid-template-columns: repeat(8, calc((100vw / 8 ) - .5rem));
     list-style-type: none;
+}
+
+.pagecontent .emojis {
+    display: none; /* !!! */
 }
 
 .pagecontent .emojis li {
@@ -203,7 +228,7 @@ main p {
 }
 
 .pagecontent .emojis > div,
-.pagecontent .parts section > div {
+.pagecontent .parts > div {
     display: grid;
     /*display: block;
     text-align: center;
@@ -214,7 +239,7 @@ main p {
     background-color: rgba(141, 101, 197, .45);
     padding: .5rem 0 0;
     border-radius: 1.5rem;
-    margin: .25rem;
+    margin: 1rem;
     /*box-shadow: inset -4px -4px 0 black;*/
     border: 1px solid rgba(255,255,255,.5);
 }
