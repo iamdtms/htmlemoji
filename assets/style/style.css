@@ -183,7 +183,8 @@ main p {
     /*box-shadow: 1px -1px 0 var(--base);*/
 }
 
-.pagecontent .emojis {
+.pagecontent .emojis,
+.pagecontent .parts section > div {
     /*user-select: none;*/
     text-align: center;
     font-size: 5.5rem;
@@ -201,7 +202,8 @@ main p {
     font-size: 3rem;
 }
 
-.pagecontent .emojis > div {
+.pagecontent .emojis > div,
+.pagecontent .parts section > div {
     display: grid;
     /*display: block;
     text-align: center;
@@ -217,7 +219,8 @@ main p {
     border: 1px solid rgba(255,255,255,.5);
 }
 
-.pagecontent .emojis > div > span {
+.pagecontent .emojis > div > span,
+.pagecontent .parts section > div > div > span {
     /*user-select: none;*/
     word-break: break-word;
     display: grid;
@@ -234,12 +237,14 @@ main p {
     /*white-space: nowrap;*/
 }
 
-.pagecontent .emojis > div > div {
+.pagecontent .emojis > div > div,
+.pagecontent .parts section > div {
     display: grid;
     place-content: space-around;
 }
 
-.pagecontent .emojis span {
+.pagecontent .emojis span,
+.pagecontent .parts span {
     hyphens: auto;
     position: relative;
     margin: 0 1rem 0;
@@ -250,12 +255,14 @@ main p {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, .6);
 }
 
-.pagecontent .emojis span::selection {
+.pagecontent .emojis span::selection,
+.pagecontent .parts span::selection {
     background-color: var(--invert);
     color: var(--base);
 }
 
-.pagecontent .emojis span:after {
+.pagecontent .emojis span:after,
+.pagecontent .parts span:after {
     content: " ";
     color: var(--base);
     position: absolute;
@@ -313,19 +320,23 @@ main > p {
 }
 
 @media (max-width: 1200px) {
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(6, calc((100vw / 6 ) - .5rem));
     }
-    .pagecontent .emojis > div {
+    .pagecontent .emojis > div,
+    .pagecontent .parts section > div {
         font-size: calc((100vw - 16rem) / 7);
     }
 }
 
 @media (max-width: 980px) {
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(5, calc((100vw / 5 ) - .5rem));
     }
-    .pagecontent .emojis > div {
+    .pagecontent .emojis > div,
+    .pagecontent .parts section > div {
         font-size: calc((100vw - 16rem) / 6);
     }
 }
@@ -338,19 +349,23 @@ main > p {
     #query span > label {
         text-align: center;
     }
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(4, calc((100vw / 4 ) - .5rem));
     }
 
-    .pagecontent .text {
+    .pagecontent .text,
+    .pagecontent .parts .text {
         font-size: 2rem;
     }
 
-    .pagecontent .emojis > div > span {
+    .pagecontent .emojis > div > span,
+    .pagecontent .parts section > div > div > span  {
         font-size: 1.6rem;
     }
 
-    .pagecontent .emojis > div {
+    .pagecontent .emojis > div,
+    .pagecontent .parts section > div {
         font-size: calc((100vw - 16rem) / 5);
     }
 }
@@ -361,32 +376,38 @@ main > p {
         line-height: 7rem;
     }
 
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(2, calc(50vw - 1rem));
         font-size: 3rem;
     }
 
-    .pagecontent .emojis > div {
+    .pagecontent .emojis > div,
+    .pagecontent .parts section > div {
         font-size: calc((100vw - 14rem) / 3);
         /*margin: 1rem;*/
     }
 }
 
 @media (max-width: 392px) {
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(2, calc(50vw - 1rem));
     }
 
-    .pagecontent .emojis > div {
+    .pagecontent .emojis > div,
+    .pagecontent .parts section > div {
         font-size: calc((100vw - 12rem) / 2);
     }
 }
 
 @media (max-width: 305px) {
-    .pagecontent .emojis {
+    .pagecontent .emojis,
+    .pagecontent .parts section > div {
         grid-template-columns: repeat(1, calc(100vw - 2rem));
     }
-    .pagecontent .emojis div {
+    .pagecontent .emojis div,
+    .pagecontent .parts section > div {
         font-size: 3rem;
     }
 }
