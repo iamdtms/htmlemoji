@@ -183,7 +183,7 @@ main p {
 
 .pagecontent .parts section hr {
     margin: 1rem;
-    border-color: rgba(255,255,255,.2);
+    border-color: var(--base-alpha);
 }
 
 .pagecontent p {
