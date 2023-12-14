@@ -183,7 +183,8 @@ main p {
 
 .pagecontent .parts section hr {
     margin: 1rem;
-    border-color: var(--base-alpha);
+    border-color: var(--invert-alpha);
+    color: var(--base);
 }
 
 .pagecontent p {
@@ -211,10 +212,24 @@ main p {
     /*line-height: 4ch;*/
     letter-spacing: 1px;
     text-shadow: var(--base) 2px 2px 0;
+    place-content: center;
     /*padding: 1rem;*/
     display: grid;
     grid-template-columns: repeat(8, calc((100vw / 8 ) - .5rem));
     list-style-type: none;
+}
+
+.pagecontent .parts section > div > div {
+    position: relative;
+    min-block-size: 17rem;
+
+}
+
+.pagecontent .parts section > div > div > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .pagecontent .emojis {
