@@ -225,7 +225,7 @@ main p {
 
 
 .pagecontent .parts section > div > div {
-    padding: 0 1rem 0 0;
+    /*padding: 0 1rem 0 0;*/
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -255,7 +255,7 @@ main p {
     background-color: rgba(141, 101, 197, .45);
     padding: 0;
     border-radius: 1.5rem;
-    margin: 1rem .5rem;
+    margin: 1rem;
     /*box-shadow: inset -4px -4px 0 black;*/
     border: 1px solid rgba(255,255,255,.5);
 }
