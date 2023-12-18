@@ -126,10 +126,10 @@ main p {
     display: inline-block;
     inline-size: 100%;
     /*line-height: 6ch;*/
-    color: var(--base);
+    color: var(--invert);
     margin-block: 0;
     margin-inline: auto;
-    background: linear-gradient(90deg, var(--invert), var(--base));
+    background: var(--base);
 }
 
 .pagecontent .text em {
@@ -137,13 +137,23 @@ main p {
     white-space: nowrap;
 }
 
+.pagecontent .text span {
+    color: var(--invert);
+    margin-block-end: .5rem;
+}
+
 .pagecontent .text p {
-    background-color: rgba(0,0,0,0);
+    background-color: var(--base);
+    margin: 1rem 0;
 }
 
 .pagecontent .text strong {
+    color: var(--base);
     background-color: var(--invert);
     padding: .25rem;
+    margin: 0;
+    place-self: baseline;
+    margin-inline: auto;
 }
 
 .pagecontent .parts section {
