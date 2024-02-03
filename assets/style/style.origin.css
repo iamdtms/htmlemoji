@@ -1,3 +1,8 @@
+
+/*****************************************************************************
+   site
+ *****************************************************************************/
+
 :root {
     --base: white;
     --base-alpha: rgba(255,255,255,.5);
@@ -111,7 +116,7 @@ main p {
     color: var(--invert);
 }
 
-[disabled] { cursor: not-allowed }
+[disabled] { cursor: not-allowed !important }
 
 /* .pagecontent (main) */
 
@@ -160,7 +165,7 @@ main p {
 
 }
 
-.pagecontent .parts section > div {
+.pagecontent .parts section > .accordion__content {
     letter-spacing: 1px;
     /*background-color: var(--invert);
     padding: 1rem;*/
@@ -196,7 +201,7 @@ main p {
 }
 
 .pagecontent .parts section hr {
-    margin: 1rem;
+    margin: 0 1rem 1rem;
     border-color: var(--invert-alpha);
     color: var(--base);
 }
@@ -218,7 +223,7 @@ main p {
 }
 
 .pagecontent .emojis,
-.pagecontent .parts section > div {
+.pagecontent .parts section > article > div {
     /*user-select: none;*/
     text-align: center;
     font-size: 5.5rem;
@@ -270,8 +275,8 @@ main p {
     border: 1px solid rgba(255,255,255,.5);
 }
 
-.pagecontent .emojis > div > span,
-.pagecontent .parts section > div > div > span {
+.pagecontent .emojis span,
+.pagecontent .parts span {
     /*user-select: none;*/
     word-break: break-word;
     display: grid;
@@ -289,7 +294,7 @@ main p {
 }
 
 .pagecontent .emojis > div > div,
-.pagecontent .parts section > div {
+.pagecontent .parts section > article {
     display: grid;
     place-content: space-around;
 }
@@ -372,8 +377,8 @@ main > p {
 
 @media (max-width: 1200px) {
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(6, calc((100vw / 6 ) - .5rem));
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(6, calc((100vw / 6 ) - 1rem));
     }
     /*
     .pagecontent .emojis > div,
@@ -385,8 +390,8 @@ main > p {
 
 @media (max-width: 980px) {
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(5, calc((100vw / 5 ) - .5rem));
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(5, calc((100vw / 5 ) - 1rem));
     }
     /*
     .pagecontent .emojis > div,
@@ -405,18 +410,18 @@ main > p {
         text-align: center;
     }
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(4, calc((100vw / 4 ) - .5rem));
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(4, calc((100vw / 4 ) - 1rem));
     }
     .pagecontent .text,
     .pagecontent .parts .text {
         font-size: 2rem;
     }
 
-    .pagecontent .emojis > div > span,
-    .pagecontent .parts section > div > div > span  {
+    /*.pagecontent .emojis span,
+    .pagecontent .parts section > article > div  {
         font-size: 1.6rem;
-    }
+    }*/
     /*
     .pagecontent .emojis > div,
     .pagecontent .parts section > div {
@@ -432,9 +437,9 @@ main > p {
     }
 
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(2, calc(50vw - 1rem));
-        font-size: 3rem;
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(2, calc(50vw - 2rem));
+        font-size: 5.5rem;
     }
     /*
     .pagecontent .emojis > div,
@@ -446,8 +451,8 @@ main > p {
 
 @media (max-width: 392px) {
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(2, calc(50vw - 1rem));
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(2, calc(50vw - 2rem));
     }
     /*
     .pagecontent .emojis > div,
@@ -459,11 +464,102 @@ main > p {
 
 @media (max-width: 305px) {
     .pagecontent .emojis,
-    .pagecontent .parts section > div {
-        grid-template-columns: repeat(1, calc(100vw - 2rem));
-    }
-    .pagecontent .emojis div,
-    .pagecontent .parts section > div {
-        font-size: 3rem;
+    .pagecontent .parts section > article > div {
+        grid-template-columns: repeat(1, calc(100vw - 4rem));
+        font-size: 5.5rem;
     }
 }
+
+/*****************************************************************************
+   accordion
+ *****************************************************************************/
+
+ body {
+    background-color: rgba(141, 101, 197, 0.45);
+  }
+
+  .keyword-search {
+    padding: 0 1rem;
+  }
+
+  .keyword-search__form {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .keyword-search__text {
+    display: block;
+    width: calc(100% - 100px);
+    color: #333;
+    font-size: 16px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem 0px 0px 2rem;
+    border-color: rgba(141, 101, 197, 1);
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 2rem;
+  }
+
+  .keyword-search__button {
+    display: block;
+    width: 100px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    border-color: rgba(141, 101, 197, 0.45);
+    background-color: rgba(141, 101, 197, 1);
+    box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);
+    border-radius: 0px 2rem  2rem 0px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .accordion__button {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .accordion__button-text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .accordion__content {
+    display: none;
+    border-color: #202f55;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+
+  .accordion__text {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
