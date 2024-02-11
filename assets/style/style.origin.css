@@ -163,9 +163,9 @@ main p {
     margin-inline: auto;
 }
 
-.pagecontent .parts {
-    max-inline-size: calc(100vw - 2rem);
-}
+/*.pagecontent .parts {
+    max-inline-size: 100vw;
+}*/
 
 .pagecontent .parts section > .accordion__content {
     letter-spacing: 1px;
@@ -202,7 +202,7 @@ main p {
     padding: 0 1rem;
     border-radius: 3rem;
     margin: 1rem .5rem;
-    max-inline-size: calc(100vw - 5rem);
+    max-inline-size: calc(100% - 1rem);
     font-size: 3rem;
 }
 
@@ -305,7 +305,7 @@ main p {
 .pagecontent .emojis > div > div,
 .pagecontent .parts section > article {
     display: grid;
-    max-inline-size: calc(100vw - 6rem);
+    max-inline-size: 100%;
     /*place-content: space-around;*/
 }
 
@@ -389,7 +389,7 @@ main > p {
     .pagecontent .emojis,
     .pagecontent .parts section > article > div {
         grid-template-columns: repeat(6, calc(100% / 6));
-        margin-inline-start: -.5rem;
+        margin-inline-start: .5rem;
     }
     /*
     .pagecontent .emojis > div,
@@ -403,7 +403,7 @@ main > p {
     .pagecontent .emojis,
     .pagecontent .parts section > article > div {
         grid-template-columns: repeat(5, calc(100% / 5));
-        margin-inline-start: -.5rem;
+        margin-inline-start: .5rem;
     }
     /*
     .pagecontent .emojis > div,
@@ -424,7 +424,7 @@ main > p {
     .pagecontent .emojis,
     .pagecontent .parts section > article > div {
         grid-template-columns: repeat(4, calc(100% / 4));
-        margin-inline-start: -.5rem;
+        margin-inline-start: .5rem;
     }
     .pagecontent .text,
     .pagecontent .parts .text {
@@ -452,7 +452,7 @@ main > p {
     .pagecontent .emojis,
     .pagecontent .parts section > article > div {
         grid-template-columns: repeat(2, calc(100% / 2));
-        margin-inline-start: -.5rem;
+        margin-inline-start: .5rem;
         font-size: 5.5rem;
     }
     /*
