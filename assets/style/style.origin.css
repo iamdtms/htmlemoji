@@ -41,7 +41,7 @@ a {
 .modal > div {
     display: grid;
     place-content: center;
-    position: absolute;
+    /*position: absolute;*/
     inset: 0;
     background: radial-gradient(#ffb02e, #8d65c580);
 }
@@ -51,6 +51,37 @@ a {
     line-height: 8rem;
     margin: 0 0 2rem;
     text-shadow: white 2px 2px 0;
+}
+
+.modal .language {
+    /*position: absolute;
+    top: 2rem;
+    right: 2rem;*/
+    text-align: right;
+    z-index: 10;
+    block-size: 0;
+    padding-block: 6rem;
+}
+
+.modal .language a {
+    padding: .5rem;
+    text-decoration: none;
+    background-color: var(--invert-alpha);
+    color: var(--base);
+    box-shadow: 6px 6px 0 var(--base);
+}
+
+.modal .language p {
+    line-height: 0;
+    padding-block-end: 6rem;
+    color: var(--invert);
+}
+
+.modal .language a:hover {
+    transition: .5s all;
+    background-color: var(--base);
+    color: var(--invert);
+    box-shadow: 6px 6px 0 var(--base-alpha);
 }
 
 .modal h1 div {
@@ -73,7 +104,7 @@ a {
     box-shadow: 6px 6px 0 #8d65c5;
 }
 
-.modal p,
+.modal > div > p,
 main p {
     color: var(--base);
     background-color: var(--invert);
@@ -119,7 +150,7 @@ main p {
     color: var(--invert);
 }
 
-[disabled] { cursor: not-allowed !important }
+/*[disabled] { cursor: not-allowed !important }*/
 
 /* .pagecontent (main) */
 

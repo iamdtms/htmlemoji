@@ -27,8 +27,10 @@ $(function () {
     });
   $('.hu').on('click', function () {
     $('body').localize({ lng: 'hu' });
+    return false;
   });
   $('.en').on('click', function () {
     $('body').localize({ lng: 'en' });
+    return false;
   });
 });
