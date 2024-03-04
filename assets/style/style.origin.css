@@ -66,7 +66,7 @@ a {
 .modal .language a {
     padding: .5rem;
     text-decoration: none;
-    background-color: var(--invert-alpha);
+    background-color: var(--invert);
     color: var(--base);
     box-shadow: 6px 6px 0 var(--base);
 }
@@ -81,7 +81,7 @@ a {
     transition: .5s all;
     background-color: var(--base);
     color: var(--invert);
-    box-shadow: 6px 6px 0 var(--base-alpha);
+    box-shadow: 6px 6px 0 var(--invert);
 }
 
 .modal h1 div {
@@ -343,7 +343,7 @@ main p {
     padding: .25rem 1rem .5rem;
     line-height: 2rem;
     margin: 0 .5rem;
-    min-height: 4rem;
+    /*min-height: 4rem;*/
     /*white-space: nowrap;*/
 }
 
