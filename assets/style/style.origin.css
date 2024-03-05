@@ -86,11 +86,6 @@ a {
     opacity: 1;
 }
 
-
-.modal .language a:hover {
-    padding-block-start: 1px;
-}
-
 .modal h1 div {
     text-align: center;
     background-color: var(--base-alpha);
