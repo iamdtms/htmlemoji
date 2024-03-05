@@ -83,11 +83,12 @@ a {
     background-color: var(--invert);
     color: var(--base);
     box-shadow: 6px 6px 0 var(--base-alpha);
+    opacity: 1;
 }
 
 
 .modal .language a:hover {
-    opacity: 1;
+    padding-block-start: 1px;
 }
 
 .modal h1 div {
