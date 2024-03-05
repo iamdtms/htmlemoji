@@ -34,7 +34,7 @@ a {
     position: relative;
     background-color: var(--base);
     text-align: center;
-    min-block-size: 100vh;
+    min-block-size: 100dvh;
     border-block-end: 6px solid #b665c5;
 }
 
@@ -66,9 +66,10 @@ a {
 .modal .language a {
     padding: .5rem;
     text-decoration: none;
-    background-color: var(--invert);
-    color: var(--base);
-    box-shadow: 6px 6px 0 var(--base);
+    background-color: var(--base);
+    color: var(--invert);
+    box-shadow: 6px 6px 0 var(--invert-alpha);
+    opacity: .5;
 }
 
 .modal .language p {
@@ -77,11 +78,16 @@ a {
     color: var(--invert);
 }
 
-.modal .language a:hover {
+.modal .language a.active {
     transition: .5s all;
-    background-color: var(--base);
-    color: var(--invert);
-    box-shadow: 6px 6px 0 var(--invert);
+    background-color: var(--invert);
+    color: var(--base);
+    box-shadow: 6px 6px 0 var(--base-alpha);
+}
+
+
+.modal .language a:hover {
+    opacity: 1;
 }
 
 .modal h1 div {
