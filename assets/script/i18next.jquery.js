@@ -1,4 +1,24 @@
 $(function () {
+  $('.hu').click(function () {
+    $('body').localize({ lng: 'hu' });
+    return false;
+  });
+
+  $('.en').click(function () {
+    $('body').localize({ lng: 'en' });
+    return false;
+  });
+
+  $(".language a").click(function () {
+    $(".language a").each(function () {
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      }
+    });
+    $(this).addClass('active');
+    return false;
+  });
+
   i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
@@ -25,26 +45,4 @@ $(function () {
       jqueryI18next.init(i18next, $, { useOptionsAttr: true });
       $('body').localize();
     });
-
-  $('.hu').on('click', function () {
-    $('body').localize({ lng: 'hu' });
-    $(".language a").on('click', function () {
-      $(".language a").each(function () {
-        $(this).removeClass('active');
-      });
-      $(this).addClass('active');
-    });
-    return false;
-  });
-
-  $('.en').on('click', function () {
-    $('body').localize({ lng: 'en' });
-    $(".language a").on('click', function () {
-      $(".language a").each(function () {
-        $(this).removeClass('active');
-      });
-      $(this).addClass('active');
-    });
-    return false;
-  });
 });
