@@ -34,12 +34,12 @@ a {
     position: relative;
     background-color: var(--base);
     text-align: center;
-    min-block-size: 100dvh;
     border-block-end: 6px solid #b665c5;
 }
 
 .modal > div {
     display: grid;
+    min-block-size: 100dvh;
     place-content: center;
     /*position: absolute;*/
     inset: 0;
