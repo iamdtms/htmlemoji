@@ -31,6 +31,15 @@ $(function () {
             modal: {
               text: "under construction..."
             },
+            form: {
+              search: "Search"
+            },
+            usage: {
+              title: "Usage:",
+              step1: "choose category",
+              step2: "select emoji",
+              step3: "copy emoji"
+            }
           }
         },
         hu: {
@@ -38,6 +47,15 @@ $(function () {
             modal: {
               text: "előkészítés alatt..."
             },
+            form: {
+              search: "Keresés"
+            },
+            usage: {
+              title: "Használat: ",
+              step1: "kategória kiválasztása",
+              step2: "emoji kiválasztása",
+              step3: "emoji másolása"
+            }
           }
         }
       }
