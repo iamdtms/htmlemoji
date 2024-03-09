@@ -30,9 +30,9 @@ $(function () {
           translation: {
             language: {
               text: "Select language: ",
-              huTitle: "Hungary",
+              huTitle: "Hungarian",
               huLogo: "🇭🇺",
-              enTitle: "United Kingdom",
+              enTitle: "English",
               enLogo: "🇬🇧"
             },
             modal: {
