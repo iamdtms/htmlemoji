@@ -28,6 +28,9 @@ $(function () {
       resources: {
         en: {
           translation: {
+            language: {
+              text: "Select language: "
+            },
             modal: {
               text: "under construction..."
             },
@@ -44,6 +47,9 @@ $(function () {
         },
         hu: {
           translation: {
+            language: {
+              text: "Nyelv választása: "
+            },
             modal: {
               text: "előkészítés alatt..."
             },
