@@ -29,7 +29,11 @@ $(function () {
         en: {
           translation: {
             language: {
-              text: "Select language: "
+              text: "Select language: ",
+              huTitle: "Hungary",
+              huLogo: "🇭🇺",
+              enTitle: "United Kingdom",
+              enLogo: "🇬🇧"
             },
             modal: {
               text: "under construction..."
@@ -48,7 +52,11 @@ $(function () {
         hu: {
           translation: {
             language: {
-              text: "Nyelv választása: "
+              text: "Nyelv választása: ",
+              huTitle: "Magyar",
+              huLogo: "🇭🇺",
+              enTitle: "Angol",
+              enLogo: "🇬🇧"
             },
             modal: {
               text: "előkészítés alatt..."
