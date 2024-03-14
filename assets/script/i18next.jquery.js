@@ -32,7 +32,7 @@ $(function () {
         en: {
           translation: {
             language: {
-              text: "Select language: ",
+              text: "Language: ",
               huTitle: "Hungarian",
               huLogo: "🇭🇺",
               enTitle: "English",
@@ -55,7 +55,7 @@ $(function () {
         hu: {
           translation: {
             language: {
-              text: "Nyelv választása: ",
+              text: "Nyelv: ",
               huTitle: "Magyar",
               huLogo: "🇭🇺",
               enTitle: "Angol",
