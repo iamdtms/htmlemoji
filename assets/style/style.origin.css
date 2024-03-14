@@ -352,7 +352,7 @@ main p {
 .pagecontent .emojis > div > div,
 .pagecontent .parts section > article {
     display: grid;
-    max-inline-size: calc(100vw - 5.2rem);
+    /*max-inline-size: calc(100vw - 5.2rem);*/
     /*place-content: space-around;*/
 }
 
@@ -458,6 +458,13 @@ main > p {
         font-size: calc((100vw - 16rem) / 6);
     }
     */
+}
+
+@media (min-width: 780px) {
+    .pagecontent .emojis>div>div,
+    .pagecontent .parts section>article {
+        max-inline-size: calc(100vw - 5.2rem);
+    }
 }
 
 
