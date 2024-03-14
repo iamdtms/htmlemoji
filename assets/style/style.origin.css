@@ -332,7 +332,7 @@ main p {
 }
 
 .pagecontent .emojis span,
-.pagecontent .parts span {
+.pagecontent .parts :not(.accordion__button span) span {
     /*user-select: none;*/
     word-break: break-word;
     display: grid;
@@ -357,7 +357,7 @@ main p {
 }
 
 .pagecontent .emojis span,
-.pagecontent .parts span {
+.pagecontent .parts .accordion__content span {
     hyphens: auto;
     position: relative;
     margin: 0 1rem 0;
@@ -369,13 +369,13 @@ main p {
 }
 
 .pagecontent .emojis span::selection,
-.pagecontent .parts span::selection {
+.pagecontent .parts .accordion__content span::selection {
     background-color: var(--invert);
     color: var(--base);
 }
 
 .pagecontent .emojis span:before,
-.pagecontent .parts span:before {
+.pagecontent .parts .accordion__content span:before {
     content: " ";
     color: var(--base);
     position: absolute;
@@ -595,7 +595,8 @@ main > p {
   .accordion__button {
     position: relative;
     padding: 1rem;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr auto;
     width: 100%;
     height: auto;
     text-align: left;
@@ -604,6 +605,11 @@ main > p {
     background-color: rgba(255, 255, 255, 0.25);
     box-sizing: border-box;
     cursor: pointer;
+  }
+
+  .accordion__button span {
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(141,101,197,.45);
   }
 
   .accordion__button-text {
