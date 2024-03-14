@@ -352,7 +352,7 @@ main p {
 .pagecontent .emojis > div > div,
 .pagecontent .parts section > article {
     display: grid;
-    max-inline-size: 100%;
+    max-inline-size: calc(100vw - 5.2rem);
     /*place-content: space-around;*/
 }
 
@@ -587,12 +587,14 @@ main > p {
 
   .accordion__button {
     position: relative;
+    padding: 1rem;
+    display: block;
     width: 100%;
     height: auto;
     text-align: left;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1.5rem;
     box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
     box-sizing: border-box;
     cursor: pointer;
   }

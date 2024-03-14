@@ -1,4 +1,7 @@
 $(function () {
+  /*$('.parts a').click(function () {
+    return false;
+  });*/
   $('.hu').click(function () {
     $('body').localize({ lng: 'hu' });
     return false;
