@@ -249,7 +249,8 @@ main p {
     border-color: var(--base-alpha);
     color: var(--base);
     /*block-size: 1px;*/
-    background-color: var(--base);
+    block-size: 4px;
+    background-color: var(--base-alpha);
 }
 
 .pagecontent p {
@@ -606,8 +607,8 @@ main > p {
     height: auto;
     text-align: left;
     border-radius: 1.5rem;
-    box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);
-    background-color: rgba(255, 255, 255, 0.25);
+    /*box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);*/
+    /*background-color: rgba(255, 255, 255, 0.25);*/
     box-sizing: border-box;
     cursor: pointer;
   }
@@ -615,6 +616,7 @@ main > p {
   .accordion__button span {
     background-color: white;
     box-shadow: 0 0 1rem rgba(141,101,197,.45);
+    text-decoration-color: none;
   }
 
   .accordion__button-text {
