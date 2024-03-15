@@ -88,6 +88,12 @@ $(function () {
               faceAffection4: "face blowing a kiss",
               faceAffection5: "kissing face",
               faceAffection6: "smiling face with tear",
+              faceTongue1: "face savoring food",
+              faceTongue2: "face with tongue",
+              faceTongue3: "winking face with tongue",
+              faceTongue4: "zany face",
+              faceTongue5: "squinting face with tongue",
+              faceTongue6: "money-mouth face"
             }
           }
         }
