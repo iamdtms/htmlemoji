@@ -93,7 +93,14 @@ $(function () {
               faceTongue3: "winking face with tongue",
               faceTongue4: "zany face",
               faceTongue5: "squinting face with tongue",
-              faceTongue6: "money-mouth face"
+              faceTongue6: "money-mouth face",
+              faceHand1: "smiling face with open hands",
+              faceHand2: "face with hand over mouth",
+              faceHand3: "face with open eyes and hand over mouth",
+              faceHand4: "face with peeking eye",
+              faceHand5: "shushing face",
+              faceHand6: "thinking face",
+              faceHand7: "saluting face",
             }
           }
         }
