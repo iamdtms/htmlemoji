@@ -39,7 +39,6 @@ a {
 
 .modal > div {
     display: grid;
-    padding-block-end: 8rem;
     min-block-size: 100dvh;
     place-content: center;
     /*position: absolute;*/
@@ -112,7 +111,6 @@ a {
     box-shadow: 6px 6px 0 #8d65c5;
 }
 
-.modal > div > p,
 main p {
     color: var(--base);
     background-color: var(--invert);
