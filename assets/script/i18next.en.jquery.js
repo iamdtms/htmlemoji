@@ -66,6 +66,28 @@ $(function () {
               step1: "choose category",
               step2: "select emoji",
               step3: "copy emoji"
+            },
+            smileys: {
+              faceSmiling1: "grinning face",
+              faceSmiling2: "grinning face with big eyes",
+              faceSmiling3: "grinning face with smiling eyes",
+              faceSmiling4: "beaming face with smiling eyes",
+              faceSmiling5: "grinning squinting face",
+              faceSmiling6: "grinning face with sweat",
+              faceSmiling7: "rolling on the floor laughing",
+              faceSmiling8: "face with tears of joy",
+              faceSmiling9: "slightly smiling face",
+              faceSmiling10: "upside-down face",
+              faceSmiling11: "melting face",
+              faceSmiling12: "winking face",
+              faceSmiling13: "smiling face with smiling eyes",
+              faceSmiling14: "smiling face with halo",
+              faceAffection1: "smiling face with hearts",
+              faceAffection2: "smiling face with heart-eyes",
+              faceAffection3: "star-struck",
+              faceAffection4: "face blowing a kiss",
+              faceAffection5: "kissing face",
+              faceAffection6: "smiling face with tear",
             }
           }
         }
