@@ -39,6 +39,7 @@ a {
 
 .modal > div {
     display: grid;
+    padding-block-end: 8rem;
     min-block-size: 100dvh;
     place-content: center;
     /*position: absolute;*/
@@ -47,8 +48,9 @@ a {
 }
 
 .modal h1 {
-    font-size: 6rem;
-    line-height: 8rem;
+    font-size: 4rem;
+    padding-block-start: 2rem;
+    /*line-height: 8rem;*/
     margin: 0 0 2rem;
     text-shadow: white 2px 2px 0;
 }
@@ -57,10 +59,14 @@ a {
     /*position: absolute;
     top: 2rem;
     right: 2rem;*/
+    /*background-color: var(--base-alpha);
+    padding: 0rem 3rem;
+    border-radius: 3rem;
     text-align: right;
-    z-index: 10;
-    block-size: 0;
-    padding-block: 6rem;
+    z-index: 10;*/
+    block-size: 6rem;
+    text-decoration: none !important;
+    /*padding-block: 6rem;*/
 }
 
 .modal .language a {
@@ -74,7 +80,6 @@ a {
 
 .modal .language p {
     line-height: 0;
-    padding-block-end: 6rem;
     color: var(--invert);
 }
 
@@ -97,7 +102,8 @@ a {
     margin: 2rem auto 0;
 }
 
-.modal h1 span {
+.modal h1 span,
+.modal .language {
     text-decoration: underline;
     text-decoration-color: #b665c5;
     background-color: var(--base-alpha);
@@ -409,6 +415,7 @@ main > p {
     background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
     color: white;
     padding-block: 2rem;
+    font-size: 2rem;
 }
 
 .pagefooter a {

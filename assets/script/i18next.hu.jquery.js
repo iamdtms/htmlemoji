@@ -43,32 +43,9 @@ $(function () {
     .use(i18nextBrowserLanguageDetector)
     .init({
       debug: true,
-      fallbackLng: 'en',
-      lng: 'en',
+      fallbackLng: 'hu',
+      lng: 'hu',
       resources: {
-        en: {
-          translation: {
-            language: {
-              text: "Language: ",
-              huTitle: "Hungarian",
-              huLogo: "🇭🇺",
-              enTitle: "English",
-              enLogo: "🇬🇧"
-            },
-            modal: {
-              text: "copy & paste"
-            },
-            form: {
-              search: "Search"
-            },
-            usage: {
-              title: "Usage:",
-              step1: "choose category",
-              step2: "select emoji",
-              step3: "copy emoji"
-            }
-          }
-        },
         hu: {
           translation: {
             language: {

@@ -56,7 +56,7 @@ $(function () {
               enLogo: "🇬🇧"
             },
             modal: {
-              text: "under construction..."
+              text: "copy & paste"
             },
             form: {
               search: "Search"
@@ -66,29 +66,6 @@ $(function () {
               step1: "choose category",
               step2: "select emoji",
               step3: "copy emoji"
-            }
-          }
-        },
-        hu: {
-          translation: {
-            language: {
-              text: "Nyelv: ",
-              huTitle: "Magyar",
-              huLogo: "🇭🇺",
-              enTitle: "Angol",
-              enLogo: "🇬🇧"
-            },
-            modal: {
-              text: "előkészítés alatt..."
-            },
-            form: {
-              search: "Keresés"
-            },
-            usage: {
-              title: "Használat: ",
-              step1: "kategória kiválasztása",
-              step2: "emoji kiválasztása",
-              step3: "emoji másolása"
             }
           }
         }
