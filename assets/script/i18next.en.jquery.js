@@ -17,7 +17,6 @@ $(function () {
       $(this).attr('title', 'open');
       $(this).children('span').text('▾');
     }
-    return false;
   });
   $('.hu').click(function () {
     $('body').localize({ lng: 'hu' });
@@ -101,6 +100,19 @@ $(function () {
               faceHand5: "shushing face",
               faceHand6: "thinking face",
               faceHand7: "saluting face",
+              faceneutral1: "zipper-mouth face",
+              faceneutral2: "face with raised eyebrow",
+              faceneutral3: "neutral face",
+              faceneutral4: "expressionless face",
+              faceneutral5: "face without mouth",
+              faceneutral6: "dotted line face",
+              faceneutral7: "face in clouds",
+              faceneutral8: "smirking face",
+              faceneutral9: "unamused face",
+              faceneutral10: "face with rolling eyes",
+              faceneutral11: "grimacing face",
+              faceneutral12: "face exhaling",
+              faceneutral13: "lying face"
             }
           }
         }
