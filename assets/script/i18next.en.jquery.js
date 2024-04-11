@@ -4,6 +4,7 @@ $(function () {
       $(this).attr('title', 'open');
     } else if ($(this).children('span').text() == '▾') {
       $(this).attr('title', 'open');
+      $('.accordion__content').css('display', 'none');
     } else if ($(this).children('span').text() == '▴') {
       $(this).attr('title', 'close');
     }
