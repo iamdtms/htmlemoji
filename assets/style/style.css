@@ -25,7 +25,7 @@ body {
 
 a {
     color: var(--invert);
-    text-decoration-color: var(--base-alpha);
+    text-decoration-color: transparent;
 }
 
 /* modal (first-view) */
