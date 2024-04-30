@@ -28,6 +28,15 @@ a {
     text-decoration-color: transparent;
 }
 
+.container {
+    display: grid;
+}
+
+.container h1 {
+    margin: 1rem;
+    text-shadow: var(--invert) 2px 2px 0;
+}
+
 /* modal (first-view) */
 
 .modal {
@@ -71,15 +80,16 @@ a {
 .modal .language a {
     padding: .5rem;
     text-decoration: none;
-    background-color: var(--base);
-    color: var(--invert);
+    background-color: var(--invert);
+    color: var(--base);
     box-shadow: 6px 6px 0 var(--invert-alpha);
     opacity: .5;
 }
 
 .modal .language p {
     line-height: 0;
-    color: var(--invert);
+    color: black;
+    text-shadow: var(--invert-alpha) 2px 2px 0;
 }
 
 .modal .language a.active {
@@ -101,7 +111,15 @@ a {
     margin: 2rem auto 0;
 }
 
-.modal h1 span,
+.modal h1 span {
+    text-decoration: underline;
+    /*text-decoration-color: #b665c5;*/
+    background-color: var(--base-alpha);
+    word-wrap: break-word;
+    padding: .5rem 1rem;
+    box-shadow: 6px 6px 0 #8d65c5;
+}
+
 .modal .language {
     text-decoration: underline;
     text-decoration-color: #b665c5;
@@ -409,7 +427,6 @@ main > p {
 /* footer */
 
 .pagefooter {
-    margin: 0 auto;
     border-block-start: 6px solid rgba(255,255,255, .5);
     background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
     color: white;
