@@ -136,6 +136,10 @@ a {
     box-shadow: 6px 6px 0 #8d65c5;
 }
 
+.modal .language a.lang.hu {
+    cursor: not-allowed;
+}
+
 main p {
     color: var(--base);
     background-color: var(--invert);
