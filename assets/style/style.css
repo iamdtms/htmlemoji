@@ -34,13 +34,14 @@ a {
 
 .container h1 {
     margin: .5rem 0;
+    font-size: 4rem;
 }
 
 .container h1 a {
-    color: black;
+    color: var(--invert);
     text-decoration: none;
-    margin: 0 1rem;
-    text-shadow: var(--invert) 2px 2px 0;
+    margin: 0;
+    /*text-shadow: var(--base) 2px 2px 0;*/
 }
 
 /* modal (first-view) */
@@ -120,10 +121,10 @@ a {
 .modal h1 span {
     text-decoration: underline;
     /*text-decoration-color: #b665c5;*/
-    background-color: var(--base-alpha);
+    /*background-color: var(--base-alpha);*/
     word-wrap: break-word;
     padding: .5rem 1rem;
-    box-shadow: 6px 6px 0 #8d65c5;
+    /*box-shadow: 6px 6px 0 #8d65c5;*/
 }
 
 .modal .language {
@@ -572,7 +573,7 @@ main > p {
  *****************************************************************************/
 
  body {
-    background-color: rgba(141, 101, 197, 0.45);
+    background-color: var(--base);
   }
 
   .keyword-search {

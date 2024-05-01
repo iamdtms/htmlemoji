@@ -59,12 +59,12 @@ $(function () {
               text: "copy & paste"
             },
             form: {
-              search: "Search"
+              search: "Find emoji: "
             },
             usage: {
               title: "Usage:",
               step1: "choose category",
-              step2: "select emoji",
+              step2: "select/search emoji",
               step3: "copy emoji"
             },
             smileys: {
