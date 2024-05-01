@@ -64,7 +64,7 @@ $(function () {
             usage: {
               title: "Usage:",
               step1: "choose category",
-              step2: "select/search emoji",
+              step2: "select/find emoji",
               step3: "copy emoji"
             },
             smileys: {
