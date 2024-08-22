@@ -63,9 +63,9 @@ $(function () {
             },
             usage: {
               title: "Usage:",
-              step1: "choose category",
+              step1: "open smiley category: ▾",
               step2: "find & select emoji",
-              step3: "copy emoji"
+              step3: "copy to clipboard & paste from clipboard"
             },
             smileys: {
               faceSmiling1: "grinning face",
