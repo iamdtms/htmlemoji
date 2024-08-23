@@ -168,13 +168,14 @@ main p {
 #query label {
     line-height: 4rem;
     text-align: right;
-    //padding-inline-end: 1rem;
     color: var(--base);
 }
 
 #query input[type=text] {
     border: 4px solid var(--base-alpha);
     background-color: var(--base);
+    color: var(--invert);
+    inline-size: 17ch;
     border-radius: 2rem;
     text-indent: .5rem;
     box-shadow: 0 0 1rem var(--invert-alpha);
