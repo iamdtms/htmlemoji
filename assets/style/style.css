@@ -186,12 +186,11 @@ main p {
   border-radius: 2rem;
   text-indent: 0.5rem;
   box-shadow: 0 0 1rem var(--invert-alpha);
-  cursor: not-allowed;
 }
 
 .query input[type="text"]::placeholder {
   background-color: var(--base);
-  /*color: var(--invert);*/
+  color: var(--invert);
 }
 
 /*[disabled] { cursor: not-allowed !important }*/
