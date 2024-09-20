@@ -3706,6 +3706,8 @@
 1F995                                                  ; fully-qualified     # 🦕 E5.0 sauropod
 1F996                                                  ; fully-qualified     # 🦖 E5.0 T-Rex
 
+================================== 111
+
 # subgroup: animal-marine
 1F433                                                  ; fully-qualified     # 🐳 E0.6 spouting whale
 1F40B                                                  ; fully-qualified     # 🐋 E1.0 whale
