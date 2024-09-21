@@ -2,15 +2,6 @@
    site
  *****************************************************************************/
 
-:root {
-  --base: white;
-  --base-alpha: rgba(255, 255, 255, 0.5);
-  --base-transparent: rgba(255, 255, 255, 0.25);
-  --invert: black;
-  --invert-alpha: rgba(0, 0, 0, 0.3);
-  --invert-transparent: rgba(0, 0, 0, 0.25);
-}
-
 body {
   font-family: "Stint Ultra Condensed", serif;
   /*letter-spacing: -1px;*/
@@ -29,6 +20,20 @@ a {
 
 .container {
   display: grid;
+  position: relative;
+}
+
+.theme-toggle {
+  z-index: 1000;
+  text-align: right;
+  margin-block-start: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.btn-toggle {
+  padding: 0.5rem 0;
+  background-color: var(--invert);
 }
 
 .container h1 {
@@ -156,9 +161,9 @@ main p {
   background-color: var(--invert);
 }
 
-.container > :nth-child(2) {
+/*.container > :nth-child(2) {
   border-block-end: 6px solid #b665c5;
-}
+}*/
 
 .container > :nth-child(4) {
   border-block-start: 6px solid #b665c5;
@@ -453,15 +458,6 @@ main > p {
   letter-spacing: 2px;
   text-align: right;
   padding-inline: 2rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --base: #111;
-    --base-alpha: rgba(0, 0, 0, 0.3);
-    --invert: white;
-    --invert-alpha: rgba(255, 255, 255, 0.5);
-  }
 }
 
 @media (max-width: 1200px) {
