@@ -3740,8 +3740,6 @@
 1FAB1                                                  ; fully-qualified     # 🪱 E13.0 worm
 1F9A0                                                  ; fully-qualified     # 🦠 E11.0 microbe
 
-================================== 111
-
 # subgroup: plant-flower
 1F490                                                  ; fully-qualified     # 💐 E0.6 bouquet
 1F338                                                  ; fully-qualified     # 🌸 E0.6 cherry blossom
@@ -3778,6 +3776,8 @@
 
 # Animals & Nature subtotal:		160
 # Animals & Nature subtotal:		160	w/o modifiers
+
+================================== 111
 
 # group: Food & Drink
 
