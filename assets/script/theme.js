@@ -40,10 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var useMode = Cookies.get('htmlemoji.mode');
 
   if (useMode == 'light') {
-    styleSetup();
+    useDark = false;
   } if (useMode == 'dark') {
-    styleSetup();
-  } else {
-    styleSetup();
+    useDark = true;
   }
+  styleSetup();
 });
