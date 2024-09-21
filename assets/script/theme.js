@@ -10,14 +10,20 @@ function styleSetup() {
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
     themeColor.content = '#0a0a0a';
+    Cookies.set('htmlemoji.mode', 'dark');
     useDark = false;
   } else {
     style.href = "assets/style/light.min.css";
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
     themeColor.content = '#3c8cd1';
+    Cookies.set('htmlemoji.mode', 'light');
     useDark = true;
   }
+}
+
+function setMode() {
+
 }
 
 window.matchMedia('(prefers-color-scheme: dark)')
@@ -31,5 +37,13 @@ toggleBtn.addEventListener("click", function (event) {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  styleSetup();
+  var useMode = Cookies.get('htmlemoji.mode');
+
+  if (useMode == 'light') {
+    styleSetup();
+  } if (useMode == 'dark') {
+    styleSetup();
+  } else {
+    styleSetup();
+  }
 });
