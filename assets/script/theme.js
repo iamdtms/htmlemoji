@@ -22,10 +22,6 @@ function styleSetup() {
   }
 }
 
-function setMode() {
-
-}
-
 window.matchMedia('(prefers-color-scheme: dark)')
   .addEventListener('change', () => {
     styleSetup();
