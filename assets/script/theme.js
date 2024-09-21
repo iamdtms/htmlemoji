@@ -10,14 +10,14 @@ function styleSetup() {
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
     themeColor.content = '#0a0a0a';
-    Cookies.set('htmlemoji.mode', 'dark');
+    Cookies.set('htmlemoji.mode', 'dark', { expires: 7 });
     useDark = false;
   } else {
     style.href = "assets/style/light.min.css";
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
     themeColor.content = '#3c8cd1';
-    Cookies.set('htmlemoji.mode', 'light');
+    Cookies.set('htmlemoji.mode', 'light', { expires: 7 });
     useDark = true;
   }
 }
