@@ -6,13 +6,13 @@ var mainContainer = document.getElementsByClassName('main-container');
 
 function styleSetup() {
   if (useDark) {
-    style.href = "assets/style/dark.css";
+    style.href = "assets/style/dark.min.css";
     toggleBtn.innerHTML = '☀️'
     toggleBtn.title = 'Turn lights on';
     themeColor.content = '#0a0a0a';
     useDark = false;
   } else {
-    style.href = "assets/style/light.css";
+    style.href = "assets/style/light.min.css";
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
     themeColor.content = '#3c8cd1';
