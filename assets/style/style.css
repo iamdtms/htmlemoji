@@ -34,6 +34,7 @@ a {
 .btn-toggle {
   padding: 0.5rem 0;
   background-color: var(--invert);
+  box-shadow: -6px 6px 0 0 var(--base-alpha);
 }
 
 .container h1 {
