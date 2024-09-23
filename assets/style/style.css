@@ -26,7 +26,8 @@ a {
 .theme-toggle {
   z-index: 1000;
   text-align: right;
-  margin-block-start: 1rem;
+  margin-block-start: 1.5rem;
+  margin-inline-end: 1rem;
   position: absolute;
   right: 0;
 }
@@ -69,7 +70,7 @@ a {
 
 .modal h1 {
   font-size: 4rem;
-  padding-block-start: 2rem;
+  /*padding-block-start: 2rem;*/
   /*line-height: 8rem;*/
   margin: 0 0 2rem;
   text-shadow: white 2px 2px 0;
@@ -84,8 +85,12 @@ a {
     border-radius: 3rem;
     text-align: right;
     z-index: 10;*/
-  block-size: 6rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  /*block-size: 6rem;*/
   text-decoration: none !important;
+  line-height: 4rem;
   /*padding-block: 6rem;*/
 }
 
@@ -99,7 +104,8 @@ a {
 }
 
 .modal .language p {
-  line-height: 0;
+  margin: 1rem 0;
+  /*line-height: 0;*/
   color: black;
   text-shadow: var(--invert-alpha) 2px 2px 0;
 }
@@ -110,6 +116,7 @@ a {
   color: var(--base);
   box-shadow: 6px 6px 0 var(--base-alpha);
   opacity: 1;
+  display: block;
 }
 
 .modal h1 div {
@@ -228,6 +235,7 @@ main p {
 .pagecontent .text span {
   color: var(--invert);
   margin-block-end: 0.5rem;
+  letter-spacing: 2px;
 }
 
 .pagecontent .text p {
@@ -249,8 +257,8 @@ main p {
 }*/
 
 .pagecontent .parts section > .accordion__content {
-  letter-spacing: 1px;
-  /*background-color: var(--invert);
+  /*letter-spacing: 1px;
+    background-color: var(--invert);
     padding: 1rem;*/
 }
 
@@ -308,7 +316,7 @@ main p {
   background-color: var(--invert-alpha);
   padding: 0 1rem;
   margin-inline-end: 1rem;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   /*box-shadow: 1px -1px 0 var(--base);*/
 }
 
@@ -319,7 +327,7 @@ main p {
   font-size: 5.5rem;
   /*font-size-adjust: inherit;*/
   /*line-height: 4ch;*/
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   text-shadow: var(--base) 2px 2px 0;
   place-content: center;
   /*padding: 1rem;*/
@@ -445,7 +453,7 @@ main > p {
   border-block-start: 6px solid rgba(255, 255, 255, 0.5);
   background: linear-gradient(0deg, #3f0d5f 0%, #681b9a 100%);
   color: white;
-  padding-block: 2rem;
+  padding-block: 2rem 1rem;
   font-size: 2rem;
 }
 
