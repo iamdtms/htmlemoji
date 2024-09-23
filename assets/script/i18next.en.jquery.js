@@ -59,13 +59,13 @@ $(function () {
               text: "copy & paste"
             },
             form: {
-              search: "Find emoji: "
+              search: "Open category, find emoji"
             },
             usage: {
               title: "Usage:",
-              step1: "open smiley category: ▾",
+              step1: "open category [▾]",
               step2: "find & select emoji",
-              step3: "copy to clipboard",
+              step3: "copy emoji",
             },
             smileys: {
               faceSmiling1: "grinning face",
