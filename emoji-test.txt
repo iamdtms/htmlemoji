@@ -5193,6 +5193,10 @@
 1F1F1 1F1FA                                            ; fully-qualified     # 🇱🇺 E2.0 flag: Luxembourg
 1F1F1 1F1FB                                            ; fully-qualified     # 🇱🇻 E2.0 flag: Latvia
 1F1F1 1F1FE                                            ; fully-qualified     # 🇱🇾 E2.0 flag: Libya
+
+------------
+
+
 1F1F2 1F1E6                                            ; fully-qualified     # 🇲🇦 E2.0 flag: Morocco
 1F1F2 1F1E8                                            ; fully-qualified     # 🇲🇨 E2.0 flag: Monaco
 1F1F2 1F1E9                                            ; fully-qualified     # 🇲🇩 E2.0 flag: Moldova
