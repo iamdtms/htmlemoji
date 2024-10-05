@@ -59,7 +59,7 @@ $(function () {
               text: "copy & paste"
             },
             form: {
-              search: "open category, find emoji"
+              search: "Find HTMLemoji:"
             },
             usage: {
               title: "Usage:",

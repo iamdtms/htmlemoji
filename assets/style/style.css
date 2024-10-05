@@ -39,7 +39,7 @@ a {
 }
 
 .container h1 {
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0.75rem;
   font-size: 4rem;
 }
 
@@ -203,7 +203,9 @@ main p {
 
 .query input[type="text"]::placeholder {
   background-color: var(--base);
-  color: var(--invert);
+  color: var(--invert-alpha);
+  padding: 0.5rem 0;
+  display: inline-block;
 }
 
 /*[disabled] { cursor: not-allowed !important }*/
