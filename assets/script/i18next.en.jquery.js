@@ -1,4 +1,8 @@
 $(function () {
+  $('form.query').submit(function () {
+    console.info('submitted.');
+    return false;
+  });
   $('.accordion__button').each(function () {
     if ($(this).children('span').text() == '') {
       $(this).attr('title', 'open');
@@ -23,12 +27,10 @@ $(function () {
     $('body').localize({ lng: 'hu' });
     return false;
   });
-
   $('.en').click(function () {
     $('body').localize({ lng: 'en' });
     return false;
   });
-
   $(".language a").click(function () {
     $(".language a").each(function () {
       if ($(this).hasClass('active')) {
@@ -38,7 +40,6 @@ $(function () {
     $(this).addClass('active');
     return false;
   });
-
   i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
