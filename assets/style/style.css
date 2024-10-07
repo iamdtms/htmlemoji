@@ -227,7 +227,7 @@ main p {
 
 .search-modal .modal-body {
   display: grid;
-  grid-template-columns: repeat(6, 12dvw);
+  grid-template-columns: repeat(1, 200px);
 }
 
 /*[disabled] { cursor: not-allowed !important }*/
@@ -502,10 +502,6 @@ main > p {
 }
 
 @media (max-width: 1200px) {
-  .search-modal .modal-body {
-    display: grid;
-    grid-template-columns: repeat(5, 14dvw);
-  }
   .pagecontent .emojis,
   .pagecontent .parts section > article > div {
     grid-template-columns: repeat(6, calc(100% / 6));
@@ -523,10 +519,6 @@ main > p {
   .query input[type="text"],
   .query button {
     max-inline-size: unset;
-  }
-  .search-modal .modal-body {
-    display: grid;
-    grid-template-columns: repeat(4, 17dvw);
   }
   .pagecontent .emojis,
   .pagecontent .parts section > article > div {
@@ -562,10 +554,6 @@ main > p {
       margin-block-end: 0;
     }
   }
-  .search-modal .modal-body {
-    display: grid;
-    grid-template-columns: repeat(3, 23dvw);
-  }
   #query span {
     grid-template-columns: 100%;
   }
@@ -595,10 +583,6 @@ main > p {
 }
 
 @media (max-width: 580px) {
-  .search-modal .modal-body {
-    display: grid;
-    grid-template-columns: repeat(2, 42dvw);
-  }
   .modal h1 {
     font-size: 4rem;
     line-height: 7rem;
