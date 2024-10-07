@@ -396,7 +396,7 @@ main p {
   /*transition: all .5s;*/
   background-color: rgba(141, 101, 197, 0.65);
   padding: 0;
-  border-radius: 1.5rem;
+  /*border-radius: 1.5rem;*/
   margin: 1rem;
   /*box-shadow: inset -4px -4px 0 black;*/
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -701,7 +701,7 @@ body {
   width: 100%;
   height: auto;
   text-align: left;
-  border-radius: 1.5rem;
+  /*border-radius: 1.5rem;*/
   /*box-shadow: 0 0 2px rgba(141, 101, 197, 0.45);*/
   /*background-color: rgba(255, 255, 255, 0.25);*/
   box-sizing: border-box;
