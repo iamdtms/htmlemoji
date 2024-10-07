@@ -210,6 +210,7 @@ main p {
 .query button {
   background-color: var(--base-alpha);
   padding: 4px;
+  cursor: pointer;
   /*inline-size: 98dvw;*/
 }
 
