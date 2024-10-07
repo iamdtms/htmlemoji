@@ -1,6 +1,5 @@
 $(function () {
   $('form.query').submit(function () {
-    console.info('submitted.');
     return false;
   });
   $('.accordion__button').each(function () {
