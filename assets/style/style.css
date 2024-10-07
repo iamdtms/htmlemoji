@@ -119,6 +119,14 @@ a {
   display: block;
 }
 
+.container h1 strong {
+  font-size: 2rem;
+  color: var(--invert-alpha);
+  text-shadow: none;
+  position: relative;
+  top: -2rem;
+}
+
 .modal h1 div {
   text-align: center;
   background-color: var(--base-alpha);
