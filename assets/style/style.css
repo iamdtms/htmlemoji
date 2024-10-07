@@ -473,6 +473,12 @@ main > p {
   display: inline-block;
 }
 
+.search-modal .modal-header button {
+  color: var(--invert) !important;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
 /* footer */
 
 .pagefooter {
