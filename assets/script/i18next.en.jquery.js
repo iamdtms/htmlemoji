@@ -1,5 +1,6 @@
 $(function () {
   $('form.query').submit(function () {
+    $(this).children('button').click();
     return false;
   });
   $('.accordion__button').each(function () {
