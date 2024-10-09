@@ -9,6 +9,23 @@ body {
   min-block-size: 100vh;
 }
 
+pre {
+  display: inline;
+  font-family: inherit;
+  unicode-bidi: normal;
+  white-space: normal;
+  margin: 0;
+}
+
+mark {
+  background-color: red;
+  color: var(--base);
+  display: inline;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 ::selection {
   background-color: var(--invert-alpha);
 }
@@ -415,17 +432,17 @@ main p {
 .pagecontent .parts :not(.accordion__button span) span,
 .modal-body > div span {
   word-break: break-word;
-  display: grid;
-  place-content: center;
+  padding: 1rem;
+  float: right;
+  margin: 1rem;
+  /*display: grid;
+  place-content: center;*/
   z-index: 100;
   background-color: var(--base);
   color: var(--invert);
   text-shadow: none;
   /*border-radius: 1rem;*/
-  padding: 0.25rem 1rem 0.5rem;
   line-height: 2rem;
-  margin: 0 0.5rem;
-  user-select: none;
   /*min-height: 4rem;*/
   /*white-space: nowrap;*/
 }
@@ -451,7 +468,7 @@ main p {
 
 .pagecontent .emojis span::selection,
 .pagecontent .parts .accordion__content span::selection {
-  background-color: var(--invert);
+  background-color: rgba(141, 101, 197, 0.65);
   color: var(--base);
 }
 
@@ -689,8 +706,8 @@ body {
 .accordion__button {
   position: relative;
   padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
+  /*display: grid;
+  grid-template-columns: 1fr auto;*/
   width: 100%;
   height: auto;
   text-align: left;
@@ -704,8 +721,10 @@ body {
 
 .accordion__button span {
   background-color: white;
+  margin-block-start: 1rem;
   box-shadow: 0 0 1rem rgba(141, 101, 197, 0.45);
-  text-decoration-color: none;
+  text-decoration: none;
+  line-height: 1rem !important;
 }
 
 .accordion__button-text {

@@ -1,7 +1,31 @@
 $(function () {
   $('form.query').submit(function () {
-    $(this).children('button').click();
+    // remove prev.
+    $('mark').each(function () {
+      $(this).contents().unwrap().wrap('<pre/>');
+    });
+    // mark new
+    var searchValue = $('#search').val();
+    $(".parts").mark(searchValue, {
+      "element": "mark",
+      "className": "highlight"
+    });
+    // open category
+    $('mark').each(function () {
+      var btn = $(this).parents('.accordion').children('.accordion__button');
+      if (!(btn.hasClass('touched'))) {
+        btn.click();
+      }
+      btn.addClass('touched');
+    });
+    //$(this).children('button').click();
+    /*var currentLocation = window.location.pathname
+    currentLocation += '#result01';
+    location.href = currentLocation;*/
     return false;
+  });
+  $('form.query button.btn.btn-primary').click(function () {
+    $('form.query').submit();
   });
   $('.accordion__button').each(function () {
     if ($(this).children('span').text() == '') {
