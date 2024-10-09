@@ -4,13 +4,18 @@ $(function () {
     $('mark').each(function () {
       $(this).contents().unwrap().wrap('<pre/>');
     });
+    // close prev.
+    $(".accordion").each(function () {
+      if ($(this).children('.accordion__button').children('span').text() == '▴')
+        $(this).click();
+    });
     // mark new
     var searchValue = $('#search').val();
     $(".parts").mark(searchValue, {
       "element": "mark",
       "className": "highlight"
     });
-    // open category
+    // open matched category
     $('mark').each(function () {
       var btn = $(this).parents('.accordion').children('.accordion__button');
       if (!(btn.hasClass('touched'))) {
