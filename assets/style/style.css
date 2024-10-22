@@ -710,7 +710,7 @@ body {
 
 .accordion__button {
   position: relative;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   /*display: grid;
   grid-template-columns: 1fr auto;*/
   width: 100%;
