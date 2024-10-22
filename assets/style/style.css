@@ -7,6 +7,7 @@ body {
   /*letter-spacing: -1px;*/
   font-size: 3rem;
   min-block-size: 100vh;
+  scroll-behavior: smooth;
 }
 
 pre {
@@ -465,6 +466,10 @@ main p {
   /*max-inline-size: 15vw;*/
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
 }
+
+/*.pagecontent .parts .accordion__content span > span {
+  margin: 0;
+}*/
 
 .pagecontent .emojis span::selection,
 .pagecontent .parts .accordion__content span::selection {
