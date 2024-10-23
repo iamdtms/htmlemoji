@@ -1,35 +1,28 @@
 $(function () {
   $('form.query').submit(function () {
-    // close all prev. category
-    $('.accordion > a > span').each(function () {
-      if ($(this).html() == '▴') {
-        var btn = $(this).parent('.accordion').children('.accordion__button');
+    // close prev. categories
+    $('.accordion').each(function () {
+      if ($(this).children('.accordion__button').hasClass('is-open')) {
+        var btn = $(this).children('.accordion__button');
         btn.click();
       }
     });
     // remove prev. marks
-    $('.highlight').each(function () {
+    $('mark').each(function () {
       $(this).replaceWith(this.childNodes);
     });
-    // close prev. category
-    /*
-    $(".accordion").each(function () {
-      if ($(this).children('.accordion__button').children('span').html() == '▴')
-        $(this).parent('.accordion__button').click();
-    });
-    */
     // mark new
     var searchValue = $('#search').val();
     $(".parts").mark(searchValue, {
-      "element": "mark",
-      "className": "highlight"
+      "element": "mark"
     });
+    // mark add IDs
     var num = 1;
     $('mark').each(function () {
       $(this).attr('id', 'm' + num);
       num++;
     });
-    // open matched category
+    // open current + scroll to 1st mark
     $('mark').each(function () {
       var btn = $(this).parents('.accordion').children('.accordion__button');
       $(btn).on('click', function () {
@@ -38,12 +31,7 @@ $(function () {
       });
       btn.click();
       return false;
-      //$("html, body").animate({ scrollTop: 0 }, "fast");
     });
-    //$(this).children('button').click();
-    /*var currentLocation = window.location.pathname
-    currentLocation += '#result01';
-    location.href = currentLocation;*/
     return false;
   });
   $('form.query button.btn.btn-primary').click(function () {
@@ -89,7 +77,7 @@ $(function () {
   i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
-      debug: true,
+      debug: false,
       fallbackLng: 'en',
       lng: 'en',
       resources: {
