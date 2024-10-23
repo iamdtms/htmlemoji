@@ -3,7 +3,7 @@ $(function () {
     // close all prev. category
     $('.accordion > a > span').each(function () {
       if ($(this).html() == '▴') {
-        var btn = $(this).parents('.accordion').children('.accordion__button');
+        var btn = $(this).parent('.accordion').children('.accordion__button');
         btn.click();
       }
     });
@@ -15,7 +15,7 @@ $(function () {
     /*
     $(".accordion").each(function () {
       if ($(this).children('.accordion__button').children('span').html() == '▴')
-        $(this).parents('.accordion__button').click();
+        $(this).parent('.accordion__button').click();
     });
     */
     // mark new
@@ -33,7 +33,7 @@ $(function () {
     $('mark').each(function () {
       var btn = $(this).parents('.accordion').children('.accordion__button');
       $(btn).on('click', function () {
-        $('html, body').animate({ scrollTop: $('#m1').offset().top - 100 }, 1000);
+        $('html, body').animate({ scrollTop: $('#m1').offset().top - 150 }, 500);
         return false;
       });
       btn.click();
