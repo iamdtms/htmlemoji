@@ -15,6 +15,7 @@ $(function () {
     $('#search').val('');
     $('#search').focus();
     $('html, body').animate({ scrollTop: $('#search').offset().top - 220 }, 500);
+    return false;
   })
   $('form.query').submit(function () {
     // close prev. categories
