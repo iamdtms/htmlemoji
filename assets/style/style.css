@@ -10,6 +10,16 @@ body {
   scroll-behavior: smooth;
 }
 
+.to-search {
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: var(--invert-alpha);
+  padding: 0.5rem 0 0 0.5rem;
+  border-top-left-radius: 3rem;
+}
+
 pre {
   display: inline;
   font-family: inherit;

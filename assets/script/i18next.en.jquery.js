@@ -1,4 +1,21 @@
 $(function () {
+  $('.to-search').on('click', function () {
+    // close prev. categories
+    $('.accordion').each(function () {
+      if ($(this).children('.accordion__button').hasClass('is-open')) {
+        var btn = $(this).children('.accordion__button');
+        btn.click();
+      }
+    });
+    // remove prev. marks
+    $('mark').each(function () {
+      $(this).replaceWith(this.childNodes);
+    });
+    // focus search bar
+    $('#search').val('');
+    $('#search').focus();
+    $('html, body').animate({ scrollTop: $('#search').offset().top - 100 }, 500);
+  })
   $('form.query').submit(function () {
     // close prev. categories
     $('.accordion').each(function () {
