@@ -7,14 +7,14 @@ $(function () {
         btn.click();
       }
     });
-    // remove prev. marks
-    $('mark').each(function () {
-      $(this).replaceWith(this.childNodes);
-    });
     // focus search bar
     $('#search').val('');
     $('#search').focus();
     $('html, body').animate({ scrollTop: $('#search').offset().top - 220 }, 500);
+    // remove prev. marks
+    $('mark').each(function () {
+      $(this).replaceWith(this.childNodes);
+    });
     return false;
   })
   $('form.query').submit(function () {
