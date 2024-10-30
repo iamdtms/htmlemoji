@@ -236,8 +236,9 @@ main p {
   color: var(--invert);
   text-indent: 0.5rem;
   box-shadow: 0 0 1rem var(--invert-alpha);
-  max-inline-size: 48dvw;
+  inline-size: 13ch;
   display: inline-block;
+  cursor: not-allowed;
 }
 
 .query input[type="text"]::placeholder {
