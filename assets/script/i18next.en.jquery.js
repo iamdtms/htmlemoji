@@ -97,7 +97,8 @@ $(function () {
               text: "copy & paste"
             },
             form: {
-              search: "Find HTMLemoji:"
+              desktop: "Desktop:",
+              mobile: "Mobile:"
             },
             usage: {
               title: "Usage:",
