@@ -2136,6 +2136,11 @@ country-flag
 1867	U+1F1F8 U+1F1FE	🇸🇾	🇸🇾	—	—	—	—	flag: Syria
 1868	U+1F1F8 U+1F1FF	🇸🇿	🇸🇿	—	—	—	—	flag: Eswatini
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
+
+
+TUVWXYZ
+
+
 1869	U+1F1F9 U+1F1E6	🇹🇦	🇹🇦	—	—	—	—	flag: Tristan da Cunha
 1870	U+1F1F9 U+1F1E8	🇹🇨	🇹🇨	—	—	—	—	flag: Turks & Caicos Islands
 1871	U+1F1F9 U+1F1E9	🇹🇩	🇹🇩	—	—	—	—	flag: Chad
@@ -2161,6 +2166,11 @@ country-flag
 1890	U+1F1FA U+1F1F8	🇺🇸	🇺🇸	🇺🇸	🇺🇸	—	🇺🇸	flag: United States
 1891	U+1F1FA U+1F1FE	🇺🇾	🇺🇾	—	—	—	—	flag: Uruguay
 1892	U+1F1FA U+1F1FF	🇺🇿	🇺🇿	—	—	—	—	flag: Uzbekistan
+
+
+
+
+
 1893	U+1F1FB U+1F1E6	🇻🇦	🇻🇦	—	—	—	—	flag: Vatican City
 1894	U+1F1FB U+1F1E8	🇻🇨	🇻🇨	—	—	—	—	flag: St. Vincent & Grenadines
 1895	U+1F1FB U+1F1EA	🇻🇪	🇻🇪	—	—	—	—	flag: Venezuela
@@ -2168,14 +2178,22 @@ country-flag
 1897	U+1F1FB U+1F1EE	🇻🇮	🇻🇮	—	—	—	—	flag: U.S. Virgin Islands
 1898	U+1F1FB U+1F1F3	🇻🇳	🇻🇳	—	—	—	—	flag: Vietnam
 1899	U+1F1FB U+1F1FA	🇻🇺	🇻🇺	—	—	—	—	flag: Vanuatu
+
 1900	U+1F1FC U+1F1EB	🇼🇫	🇼🇫	—	—	—	—	flag: Wallis & Futuna
 1901	U+1F1FC U+1F1F8	🇼🇸	🇼🇸	—	—	—	—	flag: Samoa
+
 1902	U+1F1FD U+1F1F0	🇽🇰	🇽🇰	—	—	—	—	flag: Kosovo
+
 1903	U+1F1FE U+1F1EA	🇾🇪	🇾🇪	—	—	—	—	flag: Yemen
+
 1904	U+1F1FE U+1F1F9	🇾🇹	🇾🇹	—	—	—	—	flag: Mayotte
 1905	U+1F1FF U+1F1E6	🇿🇦	🇿🇦	—	—	—	—	flag: South Africa
 1906	U+1F1FF U+1F1F2	🇿🇲	🇿🇲	—	—	—	—	flag: Zambia
 1907	U+1F1FF U+1F1FC	🇿🇼	🇿🇼	—	—	—	—	flag: Zimbabwe
+
+
+
+
 subdivision-flag
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1908	U+1F3F4 U+E0067 U+E0062 U+E0065 U+E006E U+E0067 U+E007F	🏴󠁧󠁢󠁥󠁮󠁧󠁿	🏴󠁧󠁢󠁥󠁮󠁧󠁿	—	—	—	—	flag: England
