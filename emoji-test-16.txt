@@ -20,7 +20,6 @@ food-prepared
 775	U+1F96A	🥪	🥪	—	—	—	—	sandwich
 776	U+1F32E	🌮	🌮	—	—	—	—	taco
 777	U+1F32F	🌯	🌯	—	—	—	—	burrito
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 778	U+1FAD4	🫔	🫔	—	—	—	—	tamale
 779	U+1F959	🥙	🥙	—	—	—	—	stuffed flatbread
 780	U+1F9C6	🧆	🧆	—	—	—	—	falafel
