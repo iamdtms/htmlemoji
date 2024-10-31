@@ -1,24 +1,3 @@
-food-vegetable
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-739	U+1F951	🥑	🥑	—	—	—	—	avocado
-740	U+1F346	🍆	🍆	🍆	🍆	—	🍆	eggplant
-741	U+1F954	🥔	🥔	—	—	—	—	potato
-742	U+1F955	🥕	🥕	—	—	—	—	carrot
-743	U+1F33D	🌽	🌽	🌽	—	—	🌽	ear of corn
-744	U+1F336	🌶	🌶	—	—	—	—	hot pepper
-745	U+1FAD1	🫑	🫑	—	—	—	—	bell pepper
-746	U+1F952	🥒	🥒	—	—	—	—	cucumber
-747	U+1F96C	🥬	🥬	—	—	—	—	leafy green
-748	U+1F966	🥦	🥦	—	—	—	—	broccoli
-749	U+1F9C4	🧄	🧄	—	—	—	—	garlic
-750	U+1F9C5	🧅	🧅	—	—	—	—	onion
-751	U+1F95C	🥜	🥜	—	—	—	—	peanuts
-752	U+1FAD8	🫘	🫘	—	—	—	—	beans
-753	U+1F330	🌰	🌰	🌰	—	—	🌰	chestnut
-754	U+1FADA	🫚	🫚	—	—	—	—	ginger root
-755	U+1FADB	🫛	🫛	—	—	—	—	pea pod
-756	U+1F344 U+200D U+1F7EB	🍄‍🟫	🍄‍🟫	—	—	—	—	brown mushroom
-757	U+1FADC	🫜	🫜	—	—	—	—	⊛ root vegetable
 food-prepared
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 758	U+1F35E	🍞	🍞	🍞	🍞	🍞	🍞	bread
