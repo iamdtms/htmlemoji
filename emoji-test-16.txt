@@ -1,40 +1,3 @@
-drink
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-823	U+1F37C	🍼	🍼	—	—	—	—	baby bottle
-824	U+1F95B	🥛	🥛	—	—	—	—	glass of milk
-825	U+2615	☕	☕	☕	☕	☕	☕	hot beverage
-826	U+1FAD6	🫖	🫖	—	—	—	—	teapot
-827	U+1F375	🍵	🍵	🍵	🍵	🍵	🍵	teacup without handle
-828	U+1F376	🍶	🍶	🍶	🍶	🍶	🍶	sake
-829	U+1F37E	🍾	🍾	—	—	—	—	bottle with popping cork
-830	U+1F377	🍷	🍷	🍷	—	🍷	🍷	wine glass
-831	U+1F378	🍸	🍸	🍸	🍸	🍸	🍸	cocktail glass
-832	U+1F379	🍹	🍹	🍹	—	—	🍹	tropical drink
-833	U+1F37A	🍺	🍺	🍺	🍺	🍺	🍺	beer mug
-834	U+1F37B	🍻	🍻	🍻	🍻	—	🍻	clinking beer mugs
-835	U+1F942	🥂	🥂	—	—	—	—	clinking glasses
-836	U+1F943	🥃	🥃	—	—	—	—	tumbler glass
-837	U+1FAD7	🫗	🫗	—	—	—	—	pouring liquid
-838	U+1F964	🥤	🥤	—	—	—	—	cup with straw
-839	U+1F9CB	🧋	🧋	—	—	—	—	bubble tea
-840	U+1F9C3	🧃	🧃	—	—	—	—	beverage box
-841	U+1F9C9	🧉	🧉	—	—	—	—	mate
-842	U+1F9CA	🧊	🧊	—	—	—	—	ice
-dishware
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-843	U+1F962	🥢	🥢	—	—	—	—	chopsticks
-844	U+1F37D	🍽	🍽	—	—	—	—	fork and knife with plate
-845	U+1F374	🍴	🍴	🍴	🍴	🍴	🍴	fork and knife
-846	U+1F944	🥄	🥄	—	—	—	—	spoon
-847	U+1F52A	🔪	🔪	🔪	—	—	🔪	kitchen knife
-848	U+1FAD9	🫙	🫙	—	—	—	—	jar
-849	U+1F3FA	🏺	🏺	—	—	—	—	amphora
-
-
----------------------------------------------------------------------
-
-
-
 Travel & Places
 place-map
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
@@ -282,105 +245,9 @@ sky & weather
 1065	U+1F525	🔥	🔥	🔥	🔥	—	🔥	fire
 1066	U+1F4A7	💧	💧	💧	—	💧	💧	droplet
 1067	U+1F30A	🌊	🌊	🌊	🌊	🌊	🌊	water wave
-Activities
-event
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1068	U+1F383	🎃	🎃	🎃	🎃	—	🎃	jack-o-lantern
-1069	U+1F384	🎄	🎄	🎄	🎄	🎄	🎄	Christmas tree
-1070	U+1F386	🎆	🎆	🎆	🎆	—	🎆	fireworks
-1071	U+1F387	🎇	🎇	🎇	🎇	—	🎇	sparkler
-1072	U+1F9E8	🧨	🧨	—	—	—	—	firecracker
-1073	U+2728	✨	✨	✨	✨	✨	✨	sparkles
-1074	U+1F388	🎈	🎈	🎈	🎈	—	🎈	balloon
-1075	U+1F389	🎉	🎉	🎉	🎉	—	🎉	party popper
-1076	U+1F38A	🎊	🎊	🎊	—	—	🎊	confetti ball
-1077	U+1F38B	🎋	🎋	🎋	—	—	🎋	tanabata tree
-1078	U+1F38D	🎍	🎍	🎍	🎍	—	🎍	pine decoration
-1079	U+1F38E	🎎	🎎	🎎	🎎	—	🎎	Japanese dolls
-1080	U+1F38F	🎏	🎏	🎏	🎏	—	🎏	carp streamer
-1081	U+1F390	🎐	🎐	🎐	🎐	—	🎐	wind chime
-1082	U+1F391	🎑	🎑	🎑	🎑	—	🎑	moon viewing ceremony
-1083	U+1F9E7	🧧	🧧	—	—	—	—	red envelope
-1084	U+1F380	🎀	🎀	🎀	🎀	🎀	🎀	ribbon
-1085	U+1F381	🎁	🎁	🎁	🎁	🎁	🎁	wrapped gift
-1086	U+1F397	🎗	🎗	—	—	—	—	reminder ribbon
-1087	U+1F39F	🎟	🎟	—	—	—	—	admission tickets
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1088	U+1F3AB	🎫	🎫	🎫	🎫	🎫	🎫	ticket
-award-medal
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1089	U+1F396	🎖	🎖	—	—	—	—	military medal
-1090	U+1F3C6	🏆	🏆	🏆	🏆	—	🏆	trophy
-1091	U+1F3C5	🏅	🏅	—	—	—	—	sports medal
-1092	U+1F947	🥇	🥇	—	—	—	—	1st place medal
-1093	U+1F948	🥈	🥈	—	—	—	—	2nd place medal
-1094	U+1F949	🥉	🥉	—	—	—	—	3rd place medal
-sport
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1095	U+26BD	⚽	⚽	⚽	⚽	⚽	⚽	soccer ball
-1096	U+26BE	⚾	⚾	⚾	⚾	⚾	⚾	baseball
-1097	U+1F94E	🥎	🥎	—	—	—	—	softball
-1098	U+1F3C0	🏀	🏀	🏀	🏀	🏀	🏀	basketball
-1099	U+1F3D0	🏐	🏐	—	—	—	—	volleyball
-1100	U+1F3C8	🏈	🏈	🏈	🏈	—	🏈	american football
-1101	U+1F3C9	🏉	🏉	—	—	—	—	rugby football
-1102	U+1F3BE	🎾	🎾	🎾	🎾	🎾	🎾	tennis
-1103	U+1F94F	🥏	🥏	—	—	—	—	flying disc
-1104	U+1F3B3	🎳	🎳	🎳	—	—	🎳	bowling
-1105	U+1F3CF	🏏	🏏	—	—	—	—	cricket game
-1106	U+1F3D1	🏑	🏑	—	—	—	—	field hockey
-1107	U+1F3D2	🏒	🏒	—	—	—	—	ice hockey
-1108	U+1F94D	🥍	🥍	—	—	—	—	lacrosse
-1109	U+1F3D3	🏓	🏓	—	—	—	—	ping pong
-1110	U+1F3F8	🏸	🏸	—	—	—	—	badminton
-1111	U+1F94A	🥊	🥊	—	—	—	—	boxing glove
-1112	U+1F94B	🥋	🥋	—	—	—	—	martial arts uniform
-1113	U+1F945	🥅	🥅	—	—	—	—	goal net
-1114	U+26F3	⛳	⛳	⛳	⛳	⛳	⛳	flag in hole
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1115	U+26F8	⛸	⛸	—	—	—	—	ice skate
-1116	U+1F3A3	🎣	🎣	🎣	—	—	🎣	fishing pole
-1117	U+1F93F	🤿	🤿	—	—	—	—	diving mask
-1118	U+1F3BD	🎽	🎽	🎽	—	🎽	—	running shirt
-1119	U+1F3BF	🎿	🎿	🎿	🎿	🎿	🎿	skis
-1120	U+1F6F7	🛷	🛷	—	—	—	—	sled
-1121	U+1F94C	🥌	🥌	—	—	—	—	curling stone
-game
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1122	U+1F3AF	🎯	🎯	🎯	🎯	—	🎯	bullseye
-1123	U+1FA80	🪀	🪀	—	—	—	—	yo-yo
-1124	U+1FA81	🪁	🪁	—	—	—	—	kite
-1125	U+1F52B	🔫	🔫	🔫	🔫	—	🔫	water pistol
-1126	U+1F3B1	🎱	🎱	🎱	🎱	—	🎱	pool 8 ball
-1127	U+1F52E	🔮	🔮	🔮	—	—	🔮	crystal ball
-1128	U+1FA84	🪄	🪄	—	—	—	—	magic wand
-1129	U+1F3AE	🎮	🎮	🎮	—	🎮	🎮	video game
-1130	U+1F579	🕹	🕹	—	—	—	—	joystick
-1131	U+1F3B0	🎰	🎰	🎰	🎰	—	🎰	slot machine
-1132	U+1F3B2	🎲	🎲	🎲	—	—	🎲	game die
-1133	U+1F9E9	🧩	🧩	—	—	—	—	puzzle piece
-1134	U+1F9F8	🧸	🧸	—	—	—	—	teddy bear
-1135	U+1FA85	🪅	🪅	—	—	—	—	piñata
-1136	U+1FAA9	🪩	🪩	—	—	—	—	mirror ball
-1137	U+1FA86	🪆	🪆	—	—	—	—	nesting dolls
-1138	U+2660	♠	♠	♠	♠	♠	♠	spade suit
-1139	U+2665	♥	♥	♥	♥	♥	♥	heart suit
-1140	U+2666	♦	♦	♦	♦	♦	♦	diamond suit
-1141	U+2663	♣	♣	♣	♣	♣	♣	club suit
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1142	U+265F	♟	♟	—	—	—	—	chess pawn
-1143	U+1F0CF	🃏	🃏	🃏	—	—	🃏	joker
-1144	U+1F004	🀄	🀄	🀄	🀄	—	🀄	mahjong red dragon
-1145	U+1F3B4	🎴	🎴	🎴	—	—	🎴	flower playing cards
-arts & crafts
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1146	U+1F3AD	🎭	🎭	🎭	—	—	🎭	performing arts
-1147	U+1F5BC	🖼	🖼	—	—	—	—	framed picture
-1148	U+1F3A8	🎨	🎨	🎨	🎨	🎨	🎨	artist palette
-1149	U+1F9F5	🧵	🧵	—	—	—	—	thread
-1150	U+1FAA1	🪡	🪡	—	—	—	—	sewing needle
-1151	U+1F9F6	🧶	🧶	—	—	—	—	yarn
-1152	U+1FAA2	🪢	🪢	—	—	—	—	knot
+
+------------------------------------------------------------------
+
 Objects
 clothing
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
@@ -687,6 +554,9 @@ other-object
 1414	U+1F5FF	🗿	🗿	🗿	—	—	🗿	moai
 1415	U+1FAA7	🪧	🪧	—	—	—	—	placard
 1416	U+1FAAA	🪪	🪪	—	—	—	—	identification card
+
+-------------------------------------------------------------------
+
 Symbols
 transport-sign
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
