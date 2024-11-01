@@ -1,6 +1,7 @@
 $(function () {
   $('.to-search').on('click', function () {
-    return true;
+    $('html, body').animate({ scrollTop: $('body').offset().top }, 500);
+    return false;
   })
   /*$('form.query').submit(function () {
     // close prev. categories
@@ -54,16 +55,18 @@ $(function () {
   $('.accordion__button').click(function () {
     if ($(this).children('span').text() == '▾') {
       $(this).attr('title', 'close');
+      $(this).siblings('.accordion__content').slideToggle(0);
       $(this).children('span').text('▴');
     } else if ($(this).children('span').text() == '▴') {
       $(this).attr('title', 'open');
+      $(this).siblings('.accordion__content').slideToggle(0);
       $(this).children('span').text('▾');
     }
   });
-  $('.hu').click(function () {
+  /*$('.hu').click(function () {
     $('body').localize({ lng: 'hu' });
     return false;
-  });
+  });*/
   $('.en').click(function () {
     $('body').localize({ lng: 'en' });
     return false;
