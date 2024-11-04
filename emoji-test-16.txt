@@ -1,14 +1,3 @@
-transport-water
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-966	U+2693	⚓	⚓	⚓	—	—	⚓	anchor
-967	U+1F6DF	🛟	🛟	—	—	—	—	ring buoy
-968	U+26F5	⛵	⛵	⛵	⛵	⛵	⛵	sailboat
-969	U+1F6F6	🛶	🛶	—	—	—	—	canoe
-970	U+1F6A4	🚤	🚤	🚤	🚤	—	—	speedboat
-971	U+1F6F3	🛳	🛳	—	—	—	—	passenger ship
-972	U+26F4	⛴	⛴	—	—	—	—	ferry
-973	U+1F6E5	🛥	🛥	—	—	—	—	motor boat
-974	U+1F6A2	🚢	🚢	🚢	🚢	🚢	🚢	ship
 transport-air
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 975	U+2708	✈	✈	✈	✈	✈	✈	airplane
