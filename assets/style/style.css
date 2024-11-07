@@ -70,8 +70,8 @@ a {
 }
 
 .container h1 {
-  margin: 0.75rem 0 0.75rem;
-  font-size: 3.75rem;
+  margin: 1rem 0;
+  font-size: 3.4rem;
 }
 
 .container h1 a {
@@ -79,6 +79,12 @@ a {
   text-decoration: none;
   margin: 0;
   /*text-shadow: var(--base) 2px 2px 0;*/
+}
+
+.container h1 em {
+  font-style: normal;
+  color: var(--invert-alpha);
+  text-decoration-color: var(--invert-alpha);
 }
 
 /* modal (first-view) */
@@ -104,7 +110,7 @@ a {
   /*padding-block-start: 2rem;*/
   /*line-height: 8rem;*/
   margin: 0 0 2rem;
-  text-shadow: white 2px 2px 0;
+  /*text-shadow: white 2px 2px 0;*/
 }
 
 .modal .language {
@@ -170,7 +176,7 @@ a {
 }
 
 .modal h1 span {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   /*text-decoration-color: #b665c5;*/
   /*background-color: var(--base-alpha);*/
   word-wrap: break-word;
