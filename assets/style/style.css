@@ -241,7 +241,7 @@ main p {
   color: var(--invert);
   text-indent: 0.5rem;
   box-shadow: 0 0 1rem var(--invert-alpha);
-  inline-size: 13ch;
+  inline-size: 14ch;
   display: inline-block;
   cursor: not-allowed;
   text-align: center;
