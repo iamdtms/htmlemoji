@@ -1,21 +1,3 @@
-light & video
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1250	U+1F3A5	🎥	🎥	🎥	🎥	🎥	🎥	movie camera
-1251	U+1F39E	🎞	🎞	—	—	—	—	film frames
-1252	U+1F4FD	📽	📽	—	—	—	—	film projector
-1253	U+1F3AC	🎬	🎬	🎬	🎬	🎬	🎬	clapper board
-1254	U+1F4FA	📺	📺	📺	📺	📺	📺	television
-1255	U+1F4F7	📷	📷	📷	📷	📷	📷	camera
-1256	U+1F4F8	📸	📸	—	—	—	—	camera with flash
-1257	U+1F4F9	📹	📹	📹	—	—	📹	video camera
-1258	U+1F4FC	📼	📼	📼	📼	—	📼	videocassette
-1259	U+1F50D	🔍	🔍	🔍	🔍	🔍	🔍	magnifying glass tilted left
-1260	U+1F50E	🔎	🔎	🔎	—	—	🔎	magnifying glass tilted right
-1261	U+1F56F	🕯	🕯	—	—	—	—	candle
-1262	U+1F4A1	💡	💡	💡	💡	💡	💡	light bulb
-1263	U+1F526	🔦	🔦	🔦	—	—	🔦	flashlight
-1264	U+1F3EE	🏮	🏮	🏮	—	—	🏮	red paper lantern
-1265	U+1FA94	🪔	🪔	—	—	—	—	diya lamp
 book-paper
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1266	U+1F4D4	📔	📔	📔	—	—	📔	notebook with decorative cover
