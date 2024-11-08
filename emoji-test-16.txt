@@ -1,15 +1,3 @@
-money
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1283	U+1F4B0	💰	💰	💰	💰	💰	💰	money bag
-1284	U+1FA99	🪙	🪙	—	—	—	—	coin
-1285	U+1F4B4	💴	💴	💴	—	💴	💴	yen banknote
-1286	U+1F4B5	💵	💵	💵	—	—	💵	dollar banknote
-1287	U+1F4B6	💶	💶	—	—	—	—	euro banknote
-1288	U+1F4B7	💷	💷	—	—	—	—	pound banknote
-1289	U+1F4B8	💸	💸	💸	—	—	💸	money with wings
-1290	U+1F4B3	💳	💳	💳	—	—	💳	credit card
-1291	U+1F9FE	🧾	🧾	—	—	—	—	receipt
-1292	U+1F4B9	💹	💹	💹	💹	—	💹	chart increasing with yen
 mail
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1293	U+2709	✉	✉	✉	—	✉	✉	envelope
