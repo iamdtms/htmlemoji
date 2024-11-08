@@ -16,7 +16,7 @@ function styleSetup() {
     style.href = "assets/style/light.min.css";
     toggleBtn.innerHTML = '🌙';
     toggleBtn.title = 'Turn lights off';
-    themeColor.content = '#3c8cd1';
+    themeColor.content = '#efefef';
     Cookies.set('htmlemoji.mode', 'light', { expires: 7 });
     useDark = true;
   }
