@@ -1,34 +1,4 @@
 Symbols
-transport-sign
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1417	U+1F3E7	🏧	🏧	🏧	🏧	🏧	🏧	ATM sign
-1418	U+1F6AE	🚮	🚮	—	—	—	—	litter in bin sign
-1419	U+1F6B0	🚰	🚰	—	—	—	—	potable water
-1420	U+267F	♿	♿	♿	♿	♿	♿	wheelchair symbol
-1421	U+1F6B9	🚹	🚹	🚹	🚹	—	—	men’s room
-1422	U+1F6BA	🚺	🚺	🚺	🚺	—	—	women’s room
-1423	U+1F6BB	🚻	🚻	🚻	🚻	🚻	🚻	restroom
-1424	U+1F6BC	🚼	🚼	🚼	🚼	—	—	baby symbol
-1425	U+1F6BE	🚾	🚾	🚾	🚾	—	—	water closet
-1426	U+1F6C2	🛂	🛂	—	—	—	—	passport control
-1427	U+1F6C3	🛃	🛃	—	—	—	—	customs
-1428	U+1F6C4	🛄	🛄	—	—	—	—	baggage claim
-1429	U+1F6C5	🛅	🛅	—	—	—	—	left luggage
-warning
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1430	U+26A0	⚠	⚠	⚠	⚠	⚠	⚠	warning
-1431	U+1F6B8	🚸	🚸	—	—	—	—	children crossing
-1432	U+26D4	⛔	⛔	⛔	—	—	⛔	no entry
-1433	U+1F6AB	🚫	🚫	🚫	—	—	🚫	prohibited
-1434	U+1F6B3	🚳	🚳	—	—	—	—	no bicycles
-1435	U+1F6AD	🚭	🚭	🚭	🚭	🚭	🚭	no smoking
-1436	U+1F6AF	🚯	🚯	—	—	—	—	no littering
-1437	U+1F6B1	🚱	🚱	—	—	—	—	non-potable water
-1438	U+1F6B7	🚷	🚷	—	—	—	—	no pedestrians
-1439	U+1F4F5	📵	📵	—	—	—	—	no mobile phones
-1440	U+1F51E	🔞	🔞	🔞	🔞	—	🔞	no one under eighteen
-1441	U+2622	☢	☢	—	—	—	—	radioactive
-1442	U+2623	☣	☣	—	—	—	—	biohazard
 arrow
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1443	U+2B06	⬆	⬆	—	⬆	—	⬆	up arrow
