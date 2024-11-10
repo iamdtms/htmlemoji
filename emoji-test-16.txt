@@ -1,58 +1,5 @@
 Symbols
-av-symbol
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1490	U+1F500	🔀	🔀	—	—	—	—	shuffle tracks button
-1491	U+1F501	🔁	🔁	—	—	—	—	repeat button
-1492	U+1F502	🔂	🔂	—	—	—	—	repeat single button
-1494	U+23E9	⏩	⏩	⏩	⏩	—	⏩	fast-forward button
-1495	U+23ED	⏭	⏭	—	—	—	—	next track button
-1496	U+23EF	⏯	⏯	—	—	—	—	play or pause button
-1498	U+23EA	⏪	⏪	⏪	⏪	—	⏪	fast reverse button
-1499	U+23EE	⏮	⏮	—	—	—	—	last track button
-1500	U+1F53C	🔼	🔼	🔼	—	—	🔼	upwards button
-1501	U+23EB	⏫	⏫	⏫	—	—	⏫	fast up button
-1502	U+1F53D	🔽	🔽	🔽	—	—	🔽	downwards button
-1503	U+23EC	⏬	⏬	⏬	—	—	⏬	fast down button
-1504	U+23F8	⏸	⏸	—	—	—	—	pause button
-1505	U+23F9	⏹	⏹	—	—	—	—	stop button
-1506	U+23FA	⏺	⏺	—	—	—	—	record button
-1508	U+1F3A6	🎦	🎦	🎦	🎦	—	—	cinema
-1509	U+1F505	🔅	🔅	—	—	—	—	dim button
-1510	U+1F506	🔆	🔆	—	—	—	—	bright button
-1511	U+1F4F6	📶	📶	📶	📶	—	📶	antenna bars
-1512	U+1F6DC	🛜	🛜	—	—	—	—	wireless
-1513	U+1F4F3	📳	📳	📳	📳	—	📳	vibration mode
-1514	U+1F4F4	📴	📴	📴	📴	—	📴	mobile ph
-punctuation
-1526	U+2753	❓	❓	❓	❓	—	❓	red question mark
-1527	U+2754	❔	❔	❔	❔	—	—	white question mark
-1528	U+2755	❕	❕	❕	❕	—	—	white exclamation mark
-1529	U+2757	❗	❗	❗	❗	❗	❗	red exclamation mark
-currency
-1531	U+1F4B1	💱	💱	💱	💱	—	—	currency exchange
-1532	U+1F4B2	💲	💲	💲	—	—	💲	heavy dollar sign
-other-symbol
-1536	U+1F531	🔱	🔱	🔱	🔱	—	—	trident emblem
-1537	U+1F4DB	📛	📛	📛	—	—	📛	name badge
-1538	U+1F530	🔰	🔰	🔰	🔰	—	🔰	Japanese symbol for beginner
-1539	U+2B55	⭕	⭕	⭕	⭕	—	⭕	hollow red circle
-1540	U+2705	✅	✅	✅	—	—	✅	check mark button
-1543	U+274C	❌	❌	❌	❌	—	❌	cross mark
-1544	U+274E	❎	❎	❎	—	—	❎	cross mark button
-keycap
-1555	U+0023 U+FE0F U+20E3	#️⃣	#️⃣	#️⃣	#️⃣	#️⃣	#️⃣	keycap: #
-1556	U+002A U+FE0F U+20E3	*️⃣	*️⃣	—	—	—	—	keycap: *
-1557	U+0030 U+FE0F U+20E3	0️⃣	0️⃣	0️⃣	0️⃣	0️⃣	0️⃣	keycap: 0
-1558	U+0031 U+FE0F U+20E3	1️⃣	1️⃣	1️⃣	1️⃣	1️⃣	1️⃣	keycap: 1
-1559	U+0032 U+FE0F U+20E3	2️⃣	2️⃣	2️⃣	2️⃣	2️⃣	2️⃣	keycap: 2
-1560	U+0033 U+FE0F U+20E3	3️⃣	3️⃣	3️⃣	3️⃣	3️⃣	3️⃣	keycap: 3
-1561	U+0034 U+FE0F U+20E3	4️⃣	4️⃣	4️⃣	4️⃣	4️⃣	4️⃣	keycap: 4
-1562	U+0035 U+FE0F U+20E3	5️⃣	5️⃣	5️⃣	5️⃣	5️⃣	5️⃣	keycap: 5
-1563	U+0036 U+FE0F U+20E3	6️⃣	6️⃣	6️⃣	6️⃣	6️⃣	6️⃣	keycap: 6
-1564	U+0037 U+FE0F U+20E3	7️⃣	7️⃣	7️⃣	7️⃣	7️⃣	7️⃣	keycap: 7
-1565	U+0038 U+FE0F U+20E3	8️⃣	8️⃣	8️⃣	8️⃣	8️⃣	8️⃣	keycap: 8
-1566	U+0039 U+FE0F U+20E3	9️⃣	9️⃣	9️⃣	9️⃣	9️⃣	9️⃣	keycap: 9
-1567	U+1F51F	🔟	🔟	🔟	—	—	🔟	keycap: 10
+
 alphanum
 1568	U+1F520	🔠	🔠	🔠	—	—	🔠	input latin uppercase
 1569	U+1F521	🔡	🔡	🔡	—	—	🔡	input latin lowercase
@@ -74,6 +21,7 @@ alphanum
 1587	U+1F198	🆘	🆘	🆘	—	—	🆘	SOS button
 1588	U+1F199	🆙	🆙	🆙	🆙	—	🆙	UP! button
 1589	U+1F19A	🆚	🆚	🆚	🆚	—	🆚	VS button
+
 geometric
 1607	U+1F534	🔴	🔴	🔴	🔴	—	🔴	red circle
 1608	U+1F7E0	🟠	🟠	—	—	—	—	orange circle
