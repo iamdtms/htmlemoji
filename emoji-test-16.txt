@@ -1,51 +1,3 @@
-tool
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1342	U+1F528	🔨	🔨	🔨	🔨	—	🔨	hammer
-1343	U+1FA93	🪓	🪓	—	—	—	—	axe
-1344	U+26CF	⛏	⛏	—	—	—	—	pick
-1345	U+2692	⚒	⚒	—	—	—	—	hammer and pick
-1346	U+1F6E0	🛠	🛠	—	—	—	—	hammer and wrench
-1347	U+1F5E1	🗡	🗡	—	—	—	—	dagger
-1348	U+2694	⚔	⚔	—	—	—	—	crossed swords
-1349	U+1F4A3	💣	💣	💣	💣	💣	💣	bomb
-1350	U+1FA83	🪃	🪃	—	—	—	—	boomerang
-1351	U+1F3F9	🏹	🏹	—	—	—	—	bow and arrow
-1352	U+1F6E1	🛡	🛡	—	—	—	—	shield
-1353	U+1FA9A	🪚	🪚	—	—	—	—	carpentry saw
-1354	U+1F527	🔧	🔧	🔧	—	🔧	🔧	wrench
-1355	U+1FA9B	🪛	🪛	—	—	—	—	screwdriver
-1356	U+1F529	🔩	🔩	🔩	—	—	🔩	nut and bolt
-1357	U+2699	⚙	⚙	—	—	—	—	gear
-1358	U+1F5DC	🗜	🗜	—	—	—	—	clamp
-1359	U+2696	⚖	⚖	—	—	—	—	balance scale
-1360	U+1F9AF	🦯	🦯	—	—	—	—	white cane
-1361	U+1F517	🔗	🔗	🔗	—	—	🔗	link
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1362	U+26D3 U+FE0F U+200D U+1F4A5	⛓️‍💥	⛓️‍💥	—	—	—	—	broken chain
-1363	U+26D3	⛓	⛓	—	—	—	—	chains
-1364	U+1FA9D	🪝	🪝	—	—	—	—	hook
-1365	U+1F9F0	🧰	🧰	—	—	—	—	toolbox
-1366	U+1F9F2	🧲	🧲	—	—	—	—	magnet
-1367	U+1FA9C	🪜	🪜	—	—	—	—	ladder
-1368	U+1FA8F	🪏	🪏	—	—	—	—	⊛ shovel
-science
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1369	U+2697	⚗	⚗	—	—	—	—	alembic
-1370	U+1F9EA	🧪	🧪	—	—	—	—	test tube
-1371	U+1F9EB	🧫	🧫	—	—	—	—	petri dish
-1372	U+1F9EC	🧬	🧬	—	—	—	—	dna
-1373	U+1F52C	🔬	🔬	—	—	—	—	microscope
-1374	U+1F52D	🔭	🔭	—	—	—	—	telescope
-1375	U+1F4E1	📡	📡	📡	📡	—	📡	satellite antenna
-medical
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1376	U+1F489	💉	💉	💉	💉	—	💉	syringe
-1377	U+1FA78	🩸	🩸	—	—	—	—	drop of blood
-1378	U+1F48A	💊	💊	💊	💊	—	💊	pill
-1379	U+1FA79	🩹	🩹	—	—	—	—	adhesive bandage
-1380	U+1FA7C	🩼	🩼	—	—	—	—	crutch
-1381	U+1FA7A	🩺	🩺	—	—	—	—	stethoscope
-1382	U+1FA7B	🩻	🩻	—	—	—	—	x-ray
 household
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1383	U+1F6AA	🚪	🚪	🚪	—	🚪	—	door
@@ -68,7 +20,6 @@ household
 1400	U+1F9FB	🧻	🧻	—	—	—	—	roll of paper
 1401	U+1FAA3	🪣	🪣	—	—	—	—	bucket
 1402	U+1F9FC	🧼	🧼	—	—	—	—	soap
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1403	U+1FAE7	🫧	🫧	—	—	—	—	bubbles
 1404	U+1FAA5	🪥	🪥	—	—	—	—	toothbrush
 1405	U+1F9FD	🧽	🧽	—	—	—	—	sponge
