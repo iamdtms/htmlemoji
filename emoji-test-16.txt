@@ -1,58 +1,4 @@
 Symbols
-arrow
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1443	U+2B06	⬆	⬆	—	⬆	—	⬆	up arrow
-1444	U+2197	↗	↗	↗	↗	↗	↗	up-right arrow
-1445	U+27A1	➡	➡	—	➡	—	➡	right arrow
-1446	U+2198	↘	↘	↘	↘	↘	↘	down-right arrow
-1447	U+2B07	⬇	⬇	—	⬇	—	⬇	down arrow
-1448	U+2199	↙	↙	↙	↙	↙	↙	down-left arrow
-1449	U+2B05	⬅	⬅	—	⬅	—	⬅	left arrow
-1450	U+2196	↖	↖	↖	↖	↖	↖	up-left arrow
-1451	U+2195	↕	↕	↕	—	↕	↕	up-down arrow
-1452	U+2194	↔	↔	↔	—	↔	↔	left-right arrow
-1453	U+21A9	↩	↩	—	—	↩	↩	right arrow curving left
-1454	U+21AA	↪	↪	↪	—	—	↪	left arrow curving right
-1455	U+2934	⤴	⤴	⤴	—	⤴	⤴	right arrow curving up
-1456	U+2935	⤵	⤵	⤵	—	⤵	⤵	right arrow curving down
-1457	U+1F503	🔃	🔃	🔃	—	—	🔃	clockwise vertical arrows
-1458	U+1F504	🔄	🔄	—	—	—	—	counterclockwise arrows button
-1459	U+1F519	🔙	🔙	🔙	—	—	🔙	BACK arrow
-1460	U+1F51A	🔚	🔚	🔚	—	🔚	—	END arrow
-1461	U+1F51B	🔛	🔛	🔛	—	🔛	—	ON! arrow
-1462	U+1F51C	🔜	🔜	🔜	—	🔜	—	SOON arrow
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1463	U+1F51D	🔝	🔝	🔝	🔝	—	—	TOP arrow
-religion
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1464	U+1F6D0	🛐	🛐	—	—	—	—	place of worship
-1465	U+269B	⚛	⚛	—	—	—	—	atom symbol
-1466	U+1F549	🕉	🕉	—	—	—	—	om
-1467	U+2721	✡	✡	—	—	—	—	star of David
-1468	U+2638	☸	☸	—	—	—	—	wheel of dharma
-1469	U+262F	☯	☯	—	—	—	—	yin yang
-1470	U+271D	✝	✝	—	—	—	—	latin cross
-1471	U+2626	☦	☦	—	—	—	—	orthodox cross
-1472	U+262A	☪	☪	—	—	—	—	star and crescent
-1473	U+262E	☮	☮	—	—	—	—	peace symbol
-1474	U+1F54E	🕎	🕎	—	—	—	—	menorah
-1475	U+1F52F	🔯	🔯	🔯	🔯	—	—	dotted six-pointed star
-1476	U+1FAAF	🪯	🪯	—	—	—	—	khanda
-zodiac
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1477	U+2648	♈	♈	♈	♈	♈	♈	Aries
-1478	U+2649	♉	♉	♉	♉	♉	♉	Taurus
-1479	U+264A	♊	♊	♊	♊	♊	♊	Gemini
-1480	U+264B	♋	♋	♋	♋	♋	♋	Cancer
-1481	U+264C	♌	♌	♌	♌	♌	♌	Leo
-1482	U+264D	♍	♍	♍	♍	♍	♍	Virgo
-1483	U+264E	♎	♎	♎	♎	♎	♎	Libra
-1484	U+264F	♏	♏	♏	♏	♏	♏	Scorpio
-1485	U+2650	♐	♐	♐	♐	♐	♐	Sagittarius
-1486	U+2651	♑	♑	♑	♑	♑	♑	Capricorn
-1487	U+2652	♒	♒	♒	♒	♒	♒	Aquarius
-1488	U+2653	♓	♓	♓	♓	♓	♓	Pisces
-1489	U+26CE	⛎	⛎	⛎	⛎	—	⛎	Ophiuchus
 av-symbol
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1490	U+1F500	🔀	🔀	—	—	—	—	shuffle tracks button
@@ -75,25 +21,16 @@ av-symbol
 1507	U+23CF	⏏	⏏	—	—	—	—	eject button
 1508	U+1F3A6	🎦	🎦	🎦	🎦	—	—	cinema
 1509	U+1F505	🔅	🔅	—	—	—	—	dim button
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1510	U+1F506	🔆	🔆	—	—	—	—	bright button
 1511	U+1F4F6	📶	📶	📶	📶	—	📶	antenna bars
 1512	U+1F6DC	🛜	🛜	—	—	—	—	wireless
 1513	U+1F4F3	📳	📳	📳	📳	—	📳	vibration mode
-1514	U+1F4F4	📴	📴	📴	📴	—	📴	mobile phone off
-gender
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1515	U+2640	♀	♀	—	—	—	—	female sign
-1516	U+2642	♂	♂	—	—	—	—	male sign
-1517	U+26A7	⚧	⚧	—	—	—	—	transgender symbol
-math
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1518	U+2716	✖	✖	—	—	—	✖	multiply
-1519	U+2795	➕	➕	➕	—	—	➕	plus
-1520	U+2796	➖	➖	➖	—	—	➖	minus
-1521	U+2797	➗	➗	➗	—	—	➗	divide
-1522	U+1F7F0	🟰	🟰	—	—	—	—	heavy equals sign
-1523	U+267E	♾	♾	—	—	—	—	infinity
+1514	U+1F4F4	📴	📴	📴	📴	—	📴	mobile ph
+
+
+
+
+
 punctuation
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1524	U+203C	‼	‼	‼	—	‼	‼	double exclamation mark
@@ -172,23 +109,6 @@ alphanum
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1588	U+1F199	🆙	🆙	🆙	🆙	—	🆙	UP! button
 1589	U+1F19A	🆚	🆚	🆚	🆚	—	🆚	VS button
-1590	U+1F201	🈁	🈁	🈁	🈁	—	—	Japanese “here” button
-1591	U+1F202	🈂	🈂	🈂	🈂	—	🈂	Japanese “service charge” button
-1592	U+1F237	🈷	🈷	🈷	🈷	—	—	Japanese “monthly amount” button
-1593	U+1F236	🈶	🈶	🈶	🈶	—	—	Japanese “not free of charge” button
-1594	U+1F22F	🈯	🈯	🈯	🈯	—	🈯	Japanese “reserved” button
-1595	U+1F250	🉐	🉐	🉐	🉐	—	🉐	Japanese “bargain” button
-1596	U+1F239	🈹	🈹	🈹	🈹	—	🈹	Japanese “discount” button
-1597	U+1F21A	🈚	🈚	🈚	🈚	—	—	Japanese “free of charge” button
-1598	U+1F232	🈲	🈲	🈲	—	🈲	—	Japanese “prohibited” button
-1599	U+1F251	🉑	🉑	🉑	—	—	🉑	Japanese “acceptable” button
-1600	U+1F238	🈸	🈸	🈸	🈸	—	—	Japanese “application” button
-1601	U+1F234	🈴	🈴	🈴	—	🈴	—	Japanese “passing grade” button
-1602	U+1F233	🈳	🈳	🈳	🈳	🈳	🈳	Japanese “vacancy” button
-1603	U+3297	㊗	㊗	㊗	㊗	—	㊗	Japanese “congratulations” button
-1604	U+3299	㊙	㊙	㊙	㊙	㊙	㊙	Japanese “secret” button
-1605	U+1F23A	🈺	🈺	🈺	🈺	—	🈺	Japanese “open for business” button
-1606	U+1F235	🈵	🈵	🈵	🈵	🈵	🈵	Japanese “no vacancy” button
 geometric
 №	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1607	U+1F534	🔴	🔴	🔴	🔴	—	🔴	red circle
