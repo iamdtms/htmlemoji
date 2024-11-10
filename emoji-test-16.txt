@@ -4,11 +4,9 @@ av-symbol
 1490	U+1F500	🔀	🔀	—	—	—	—	shuffle tracks button
 1491	U+1F501	🔁	🔁	—	—	—	—	repeat button
 1492	U+1F502	🔂	🔂	—	—	—	—	repeat single button
-1493	U+25B6	▶	▶	▶	▶	—	▶	play button
 1494	U+23E9	⏩	⏩	⏩	⏩	—	⏩	fast-forward button
 1495	U+23ED	⏭	⏭	—	—	—	—	next track button
 1496	U+23EF	⏯	⏯	—	—	—	—	play or pause button
-1497	U+25C0	◀	◀	◀	◀	—	◀	reverse button
 1498	U+23EA	⏪	⏪	⏪	⏪	—	⏪	fast reverse button
 1499	U+23EE	⏮	⏮	—	—	—	—	last track button
 1500	U+1F53C	🔼	🔼	🔼	—	—	🔼	upwards button
@@ -18,7 +16,6 @@ av-symbol
 1504	U+23F8	⏸	⏸	—	—	—	—	pause button
 1505	U+23F9	⏹	⏹	—	—	—	—	stop button
 1506	U+23FA	⏺	⏺	—	—	—	—	record button
-1507	U+23CF	⏏	⏏	—	—	—	—	eject button
 1508	U+1F3A6	🎦	🎦	🎦	🎦	—	—	cinema
 1509	U+1F505	🔅	🔅	—	—	—	—	dim button
 1510	U+1F506	🔆	🔆	—	—	—	—	bright button
@@ -26,51 +23,23 @@ av-symbol
 1512	U+1F6DC	🛜	🛜	—	—	—	—	wireless
 1513	U+1F4F3	📳	📳	📳	📳	—	📳	vibration mode
 1514	U+1F4F4	📴	📴	📴	📴	—	📴	mobile ph
-
-
-
-
-
 punctuation
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1524	U+203C	‼	‼	‼	—	‼	‼	double exclamation mark
-1525	U+2049	⁉	⁉	⁉	—	⁉	⁉	exclamation question mark
 1526	U+2753	❓	❓	❓	❓	—	❓	red question mark
 1527	U+2754	❔	❔	❔	❔	—	—	white question mark
 1528	U+2755	❕	❕	❕	❕	—	—	white exclamation mark
 1529	U+2757	❗	❗	❗	❗	❗	❗	red exclamation mark
-1530	U+3030	〰	〰	〰	—	〰	—	wavy dash
 currency
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1531	U+1F4B1	💱	💱	💱	💱	—	—	currency exchange
 1532	U+1F4B2	💲	💲	💲	—	—	💲	heavy dollar sign
 other-symbol
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1533	U+2695	⚕	⚕	—	—	—	—	medical symbol
-1534	U+267B	♻	♻	♻	—	♻	♻	recycling symbol
-1535	U+269C	⚜	⚜	—	—	—	—	fleur-de-lis
 1536	U+1F531	🔱	🔱	🔱	🔱	—	—	trident emblem
 1537	U+1F4DB	📛	📛	📛	—	—	📛	name badge
 1538	U+1F530	🔰	🔰	🔰	🔰	—	🔰	Japanese symbol for beginner
 1539	U+2B55	⭕	⭕	⭕	⭕	—	⭕	hollow red circle
 1540	U+2705	✅	✅	✅	—	—	✅	check mark button
-1541	U+2611	☑	☑	☑	—	—	☑	check box with check
-1542	U+2714	✔	✔	—	—	—	✔	check mark
 1543	U+274C	❌	❌	❌	❌	—	❌	cross mark
 1544	U+274E	❎	❎	❎	—	—	❎	cross mark button
-1545	U+27B0	➰	➰	➰	—	➰	➰	curly loop
-1546	U+27BF	➿	➿	➿	—	—	—	double curly loop
-1547	U+303D	〽	〽	〽	〽	—	—	part alternation mark
-1548	U+2733	✳	✳	✳	✳	—	✳	eight-spoked asterisk
-1549	U+2734	✴	✴	—	✴	—	✴	eight-pointed star
-1550	U+2747	❇	❇	❇	—	—	❇	sparkle
-1551	U+00A9	©	©	©	©	©	©	copyright
-1552	U+00AE	®	®	®	®	®	®	registered
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
-1553	U+2122	™	™	™	™	™	™	trade mark
-1554	U+1FADF	🫟	🫟	—	—	—	—	⊛ splatter
 keycap
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1555	U+0023 U+FE0F U+20E3	#️⃣	#️⃣	#️⃣	#️⃣	#️⃣	#️⃣	keycap: #
 1556	U+002A U+FE0F U+20E3	*️⃣	*️⃣	—	—	—	—	keycap: *
 1557	U+0030 U+FE0F U+20E3	0️⃣	0️⃣	0️⃣	0️⃣	0️⃣	0️⃣	keycap: 0
@@ -85,7 +54,6 @@ keycap
 1566	U+0039 U+FE0F U+20E3	9️⃣	9️⃣	9️⃣	9️⃣	9️⃣	9️⃣	keycap: 9
 1567	U+1F51F	🔟	🔟	🔟	—	—	🔟	keycap: 10
 alphanum
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1568	U+1F520	🔠	🔠	🔠	—	—	🔠	input latin uppercase
 1569	U+1F521	🔡	🔡	🔡	—	—	🔡	input latin lowercase
 1570	U+1F522	🔢	🔢	🔢	—	—	🔢	input numbers
@@ -97,20 +65,16 @@ alphanum
 1576	U+1F191	🆑	🆑	🆑	—	🆑	🆑	CL button
 1577	U+1F192	🆒	🆒	🆒	🆒	—	🆒	COOL button
 1578	U+1F193	🆓	🆓	🆓	—	🆓	🆓	FREE button
-1579	U+2139	ℹ	ℹ	ℹ	—	—	ℹ	information
 1580	U+1F194	🆔	🆔	🆔	🆔	🆔	🆔	ID button
-1581	U+24C2	Ⓜ	Ⓜ	Ⓜ	—	Ⓜ	—	circled M
 1582	U+1F195	🆕	🆕	🆕	🆕	🆕	🆕	NEW button
 1583	U+1F196	🆖	🆖	🆖	—	🆖	—	NG button
 1584	U+1F17E	🅾	🅾	🅾	🅾	—	🅾	O button (blood type)
 1585	U+1F197	🆗	🆗	🆗	🆗	🆗	🆗	OK button
 1586	U+1F17F	🅿	🅿	🅿	🅿	🅿	🅿	P button
 1587	U+1F198	🆘	🆘	🆘	—	—	🆘	SOS button
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1588	U+1F199	🆙	🆙	🆙	🆙	—	🆙	UP! button
 1589	U+1F19A	🆚	🆚	🆚	🆚	—	🆚	VS button
 geometric
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1607	U+1F534	🔴	🔴	🔴	🔴	—	🔴	red circle
 1608	U+1F7E0	🟠	🟠	—	—	—	—	orange circle
 1609	U+1F7E1	🟡	🟡	—	—	—	—	yellow circle
@@ -130,12 +94,8 @@ geometric
 1623	U+2B1B	⬛	⬛	—	—	—	⬛	black large square
 1624	U+2B1C	⬜	⬜	—	—	—	⬜	white large square
 1625	U+25FC	◼	◼	◼	—	—	◼	black medium square
-1626	U+25FB	◻	◻	◻	—	—	◻	white medium square
-№	Code	Browser	Sample	GMail	SB	DCM	KDDI	CLDR Short Name
 1627	U+25FE	◾	◾	◾	—	—	◾	black medium-small square
 1628	U+25FD	◽	◽	◽	—	—	◽	white medium-small square
-1629	U+25AA	▪	▪	▪	—	—	▪	black small square
-1630	U+25AB	▫	▫	▫	—	—	▫	white small square
 1631	U+1F536	🔶	🔶	🔶	—	—	🔶	large orange diamond
 1632	U+1F537	🔷	🔷	🔷	—	—	🔷	large blue diamond
 1633	U+1F538	🔸	🔸	🔸	—	—	🔸	small orange diamond
