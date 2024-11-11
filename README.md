@@ -1,2 +1,3 @@
-# htmlemoji.netlify.app
-&copy; Dohány Tamás 
+# htmlemoji.netlify.app & htmlemoji.eu
+
+(CC) Dohány Tamás
