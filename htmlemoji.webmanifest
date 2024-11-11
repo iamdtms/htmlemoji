@@ -1,6 +1,6 @@
 {
-  "name": "HTMLemoji",
-  "short_name": "HTMLemoji",
+  "name": "htmlemoji",
+  "short_name": "htmlemoji",
   "icons": [
     {
       "src": "media/image/android-chrome-192x192.png",
