@@ -1,4 +1,11 @@
 $(function () {
+  $('.accordion .accordion__content > div > div > div').click(function () {
+    navigator.clipboard.writeText($(this).html());
+    $(this).append('<i>Copied to the clipboard!</i>');
+    setTimeout(() => {
+      $(this).children('i').remove();
+    }, 2000);
+  });
   $('.to-search').on('click', function () {
     $('html, body').animate({ scrollTop: $('body').offset().top }, 50);
     return false;

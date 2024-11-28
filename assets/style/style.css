@@ -498,6 +498,26 @@ main p {
   margin: 0;
 }*/
 
+.pagecontent .parts .accordion__content > div > div > div {
+  position: relative;
+  cursor: pointer;
+}
+
+.pagecontent .parts .accordion__content > div > div > div i {
+  position: absolute;
+  top: 2rem;
+  font-style: normal;
+  border: 1px solid black;
+  margin: 0 1rem 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  font-size: 1.5rem;
+  text-shadow: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
 .pagecontent .emojis span::selection,
 .pagecontent .parts .accordion__content span::selection {
   background-color: rgba(141, 101, 197, 0.65);
