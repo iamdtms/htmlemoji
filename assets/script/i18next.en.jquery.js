@@ -1,10 +1,10 @@
 $(function () {
-  $('.accordion .accordion__content > div > div > div').each(function() {
-    $(this).attr('title','Click to Copy!');
+  $('.accordion .accordion__content > div > div > div').each(function () {
+    $(this).attr('title', 'Click to Copy!');
   });
   $('.accordion .accordion__content > div > div > div').click(function () {
-    navigator.clipboard.writeText($(this).html());
-    $(this).append('<i>Copied to the clipboard!</i>');
+    navigator.clipboard.writeText($(this).clone().children().remove().end().text());
+    $(this).append('<i>Copied to clipboard!</i>');
     setTimeout(() => {
       $(this).children('i').remove();
     }, 2000);
