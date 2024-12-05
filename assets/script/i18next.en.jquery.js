@@ -133,18 +133,21 @@ $(function () {
               faceSmiling12: "winking face",
               faceSmiling13: "smiling face with smiling eyes",
               faceSmiling14: "smiling face with halo",
+
               faceAffection1: "smiling face with hearts",
               faceAffection2: "smiling face with heart-eyes",
               faceAffection3: "star-struck",
               faceAffection4: "face blowing a kiss",
               faceAffection5: "kissing face",
               faceAffection6: "smiling face with tear",
+
               faceTongue1: "face savoring food",
               faceTongue2: "face with tongue",
               faceTongue3: "winking face with tongue",
               faceTongue4: "zany face",
               faceTongue5: "squinting face with tongue",
               faceTongue6: "money-mouth face",
+
               faceHand1: "smiling face with open hands",
               faceHand2: "face with hand over mouth",
               faceHand3: "face with open eyes and hand over mouth",
@@ -152,6 +155,7 @@ $(function () {
               faceHand5: "shushing face",
               faceHand6: "thinking face",
               faceHand7: "saluting face",
+
               faceneutral1: "zipper-mouth face",
               faceneutral2: "face with raised eyebrow",
               faceneutral3: "neutral face",
@@ -164,7 +168,16 @@ $(function () {
               faceneutral10: "face with rolling eyes",
               faceneutral11: "grimacing face",
               faceneutral12: "face exhaling",
-              faceneutral13: "lying face"
+              faceneutral13: "lying face",
+
+              faceSleepy1: "shaking face",
+              faceSleepy2: "head shaking horizontally",
+              faceSleepy3: "head shaking vertically",
+              faceSleepy4: "relieved face",
+              faceSleepy5: "pensive face",
+              faceSleepy6: "sleepy face",
+              faceSleepy7: "drooling face",
+              faceSleepy8: "sleeping face"
             }
           }
         }
