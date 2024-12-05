@@ -132,11 +132,11 @@ a {
   /*padding-block: 6rem;*/
 }
 
-.modal .language-grid {
+/*.modal .language-grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
-}
+}*/
 
 .modal .language a {
   padding: 0.5rem;
