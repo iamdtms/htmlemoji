@@ -109,7 +109,8 @@ a {
   font-size: 4rem;
   /*padding-block-start: 2rem;*/
   /*line-height: 8rem;*/
-  margin: 0 0 2rem;
+  margin: 1rem 0 2rem;
+  text-align: left;
   /*text-shadow: white 2px 2px 0;*/
 }
 
@@ -131,6 +132,12 @@ a {
   /*padding-block: 6rem;*/
 }
 
+.modal .language-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .modal .language a {
   padding: 0.5rem;
   text-decoration: none;
@@ -138,6 +145,8 @@ a {
   color: var(--base);
   box-shadow: 6px 6px 0 var(--invert-alpha);
   opacity: 0.5;
+  margin-block-end: 1rem;
+  pointer-events: none;
 }
 
 .modal .language p {
@@ -148,12 +157,14 @@ a {
 }
 
 .modal .language a.active {
+  grid-column: span 4;
   transition: 0.5s all;
   background-color: var(--invert);
   color: var(--base);
   box-shadow: 6px 6px 0 var(--base-alpha);
   opacity: 1;
   display: block;
+  pointer-events: all;
 }
 
 .container h1 strong {
