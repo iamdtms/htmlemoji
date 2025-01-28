@@ -34,6 +34,17 @@
   </head>
   <body>
     <div class="container">
+      <div class="modal fade" id="modalTag" tabindex="-1" aria-labelledby="modal-tag-label">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal-tag-label"></h5>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" title="Close">&times;</button>
+            </div>
+            <div class="modal-body">...</div>
+          </div>
+        </div>
+      </div>
       <div class="theme-toggle">
         <a class="btn-toggle" href="#" title=""></a>
       </div>
@@ -53,10 +64,16 @@
               <article class="accordion__content">
                 <h2>face-smiling</h2>
                 <div>
-                  <div><span data-i18n="smileys.faceSmiling1"></span>
-                    <div>😀</div></div>
-                  <div><span data-i18n="smileys.faceSmiling2"></span>
-                    <div>😃</div></div>
+                  <div>
+                    <strong><a data-bs-toggle="modal" data-bs-target="#modal-tag" id="tag_cheerful" href="#tag_cheerful">cheerful</a> <a id="tag_cheery" href="#tag_cheery">cheery</a> <a href="#tag">face</a> <a href="#tag">grin</a> <a href="#tag">grinning</a> <a href="#tag">happy</a> <a href="#tag">nice</a> <a href="#tag">laugh</a> <a href="#tag">smile</a> <a href="#tag">smiling</a> <a href="#tag_teeth">teeth</a></strong>
+                    <span data-i18n="smileys.faceSmiling1"></span>
+                    <div>😀</div>
+                  </div>
+                  <div>
+                    <strong><a href="#tag">awesome </a> <a href="#tag">big </a> <a href="#tag">eyes </a> <a href="#tag">face </a> <a href="#tag">grin</a> <a href="#tag">grinning</a> <a href="#tag">happy</a> <a href="#tag">mouth </a> <a href="#tag">open </a> <a href="#tag">smile</a> <a href="#tag">smiling</a> <a href="#tag_teeth">teeth</a> <a href="#tag">yay</a></strong>
+                    <span data-i18n="smileys.faceSmiling2"></span>
+                    <div>😃</div>
+                  </div>
                   <div><span data-i18n="smileys.faceSmiling3"></span>
                     <div>😄</div></div>
                   <div><span data-i18n="smileys.faceSmiling4"></span>
@@ -5266,6 +5283,8 @@
       <a href="#" class="to-search" title="To Top">🔝</a>
     </div>
     <script src="assets/script/jquery-3.7.1.min.js"></script>
+    <script src="assets/script/bootstrap.bundle.min.js"></script>
+    <script src="assets/script/popper.min.js"></script>
     <script src="assets/script/i18next.min.js"></script>
     <script src="assets/script/jquery-i18next.min.js"></script>
     <script src="assets/script/i18nextBrowserLanguageDetector.min.js"></script>

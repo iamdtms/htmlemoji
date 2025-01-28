@@ -90,10 +90,31 @@ a {
 /* modal (first-view) */
 
 .modal {
-  position: relative;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1010;
   background-color: var(--base);
   text-align: center;
   border-block-end: 6px solid #b665c5;
+}
+
+.modal .modal-header button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+  color: var(--base);
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.modal .modal-title {
+  font-size: 4rem;
+  color: var(--base);
 }
 
 .modal > div {
@@ -433,12 +454,36 @@ main p {
   margin-block-end: 2rem;
   place-content: baseline;
   /*min-block-size: 17rem;*/
+  position: relative;
 }
 
 .pagecontent .parts section > div > div {
   /*padding: 0 1rem 0 0;*/
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+
+.pagecontent .parts section > article > div > div > strong {
+  font-size: 1rem;
+  text-shadow: none;
+  margin-block-start: 1rem;
+}
+
+.pagecontent .parts section > article > div > div > strong > a {
+  background-color: var(--invert);
+  color: var(--base);
+  padding: 3px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  transition: 1s all;
+  margin-inline-end: 0;
+  margin-block-end: 2px;
+  display: inline-block;
+}
+
+.pagecontent .parts section > article > div > div > strong > a:hover {
+  background-color: var(--base);
+  color: var(--invert);
 }
 
 .pagecontent .emojis {
