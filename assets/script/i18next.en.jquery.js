@@ -2,20 +2,18 @@ $(function () {
   $('a[href^="#tag"]').on('click', function () {
 
     /* open twbs modal with tag emoji content:
-       - modal opening
        - copy tag emojis to grid
-       - modal closure delete content */
+    */
 
     $('#modal-tag-label').text($(this).text());
     $('#modalTag').modal('show');
     $('body').css('overflow', 'hidden');
-    return false;
   });
   $('#modalTag .btn.btn-secondary').on('click', function () {
-
+    window.location.hash = '';
     $('body').removeAttr('style');
     $('#modalTag').modal('hide');
-
+    $('#modalTag .modal-body').empty();
   });
   $('.accordion .accordion__content > div > div > div').each(function () {
     $(this).attr('title', 'Click to Copy!');
