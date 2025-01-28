@@ -1,16 +1,19 @@
 $(function () {
-  $('a[href^="#tag"]').on('click', function () {
-
-    /* open twbs modal with tag emoji content:
-       - copy tag emojis to grid
-    */
-
-    $('#modal-tag-label').text($(this).text());
+  $('strong a[href="#"]').on('click', function () {
+    var text = $(this).text();
+    $('#modal-tag-label').text(text);
     $('#modalTag').modal('show');
+
+    var select = $(this).parents('.parts .accordion');
+    $(select).each(function () {
+      var child = $(this).children('.accordion__content div[title="Click to Copy!"]');
+      $(child).clone().appendTo('#modalTag .modal-body');
+    });
+
     $('body').css('overflow', 'hidden');
+    return false;
   });
   $('#modalTag .btn.btn-secondary').on('click', function () {
-    window.location.hash = '';
     $('body').removeAttr('style');
     $('#modalTag').modal('hide');
     $('#modalTag .modal-body').empty();
