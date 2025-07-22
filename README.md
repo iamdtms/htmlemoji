@@ -1,4 +1,6 @@
-# htmlemoji.netlify.app & htmlemoji.eu
+# htmlemoji.eu & htmlemoji.netlify.app
+
+## HTMLemoji - copy &amp; paste
 
 MIT License
 
