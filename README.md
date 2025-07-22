@@ -1,3 +1,5 @@
 # htmlemoji.netlify.app & htmlemoji.eu
 
-(CC) Dohány Tamás
+MIT License
+
+Copyright (c) 2023-present, Tamas Dohany
