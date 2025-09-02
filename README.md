@@ -3,4 +3,4 @@
 
 MIT License
 
-Copyright (c) 2023-present, Tamas Dohany
+Copyright (c) 2023 - present, Tamas Dohany
