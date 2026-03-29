@@ -283,16 +283,37 @@ main p {
   color: var(--invert);
   text-indent: 0.5rem;
   box-shadow: 0 0 1rem var(--invert-alpha);
-  inline-size: 14ch;
+  inline-size: 20ch;
   display: inline-block;
-  cursor: not-allowed;
-  text-align: center;
+  cursor: text;
+  text-align: left;
 }
 
 .query input[type="text"]::placeholder {
   background-color: var(--base);
   color: var(--invert-alpha);
   padding: 0.5rem 0;
+}
+
+.query #search {
+  inline-size: 25ch;
+  margin-right: 0.5rem;
+}
+
+.query #clear-search {
+  background-color: var(--base-alpha);
+  border: 2px solid var(--base);
+  color: var(--invert);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.query #clear-search:hover {
+  background-color: var(--base);
+  color: var(--invert);
 }
 
 .query button {
@@ -672,11 +693,6 @@ main > p {
   .pagecontent .parts section > article {
     max-inline-size: calc(100vw - 5.2rem);
   }
-
-  .query label[for="mobile"],
-  .query input#mobile {
-    display: none;
-  }
 }
 
 @media (max-width: 780px) {
@@ -684,9 +700,7 @@ main > p {
     display: grid;
     grid-template-rows: auto auto auto;
   }
-
-  .query label[for="desktop"],
-  .query input#desktop {
+}
     display: none;
   }
 
@@ -877,4 +891,10 @@ body {
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
+}
+
+/* issues */
+
+.pagefooter sup {
+  white-space: nowrap;
 }
