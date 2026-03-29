@@ -32,28 +32,70 @@ $(function () {
     $('html, body').animate({ scrollTop: $('body').offset().top }, 50);
     return false;
   })
+  /*$('form.query').submit(function () {
+    // close prev. categories
+    $('.accordion').each(function () {
+      if ($(this).children('.accordion__button').hasClass('is-open')) {
+        var btn = $(this).children('.accordion__button');
+        btn.click();
+      }
+    });
+    // remove prev. marks
+    $('mark').each(function () {
+      $(this).replaceWith(this.childNodes);
+    });
+    // mark new
+    var searchValue = $('#search').val();
+    $(".parts").mark(searchValue, {
+      "element": "mark"
+    });
+    // mark add IDs
+    var num = 1;
+    $('mark').each(function () {
+      $(this).attr('id', 'm' + num);
+      num++;
+    });
+    // open current + scroll to 1st mark
+    $('mark').each(function () {
+      var btn = $(this).parents('.accordion').children('.accordion__button');
+      $(btn).on('click', function () {
+        $('html, body').animate({ scrollTop: $('#m1').offset().top - 150 }, 500);
+        return false;
+      });
+      btn.click();
+      return false;
+    });
+    return false;
+  });*/
+  /*$('form.query button.btn.btn-primary').click(function () {
+    $('form.query').submit();
+  });*/
   $('.accordion__button').each(function () {
     if ($(this).children('span').text() == '') {
       $(this).attr('title', 'close');
-    } else if ($(this).children('span').text() == '?') {
+    } else if ($(this).children('span').text() == '▾') {
       $(this).attr('title', 'open');
       $('.accordion__content').css('display', 'none');
-    } else if ($(this).children('span').text() == '?') {
+    } else if ($(this).children('span').text() == '▴') {
       $(this).attr('title', 'close');
     }
     return false;
   });
   $('.accordion__button').click(function () {
-    if ($(this).children('span').text() == '▴') {
+    if ($(this).children('span').text() == '▾') {
       $(this).attr('title', 'close');
       $(this).siblings('.accordion__content').slideToggle(50);
       $(this).children('span').text('▴');
-    } else if ($(this).children('span').text() == '?') {
+    } else if ($(this).children('span').text() == '▴') {
       $(this).attr('title', 'open');
       $(this).siblings('.accordion__content').slideToggle(50);
-      $(this).children('span').text('?');
+      $(this).children('span').text('▾');
     }
   });
+  /*$('.hu').click(function () {
+    $('body').localize({ lng: 'hu' });
+    return false;
+  });*/
   $('.en').click(function () {
     $('body').localize({ lng: 'en' });
     return false;
@@ -67,104 +109,6 @@ $(function () {
     $(this).addClass('active');
     return false;
   });
-
-  // Search functionality
-  var searchInput = $('#search');
-  var clearButton = $('#clear-search');
-  var emojiItems = $('.accordion__content > div');
-
-  function performSearch() {
-    var searchTerm = searchInput.val().toLowerCase().trim();
-
-    if (searchTerm === '') {
-      // Show all items when search is empty
-      emojiItems.show();
-      $('.accordion').show();
-      return;
-    }
-
-    var visibleCount = 0;
-
-    emojiItems.each(function() {
-      var $item = $(this);
-      var emojiText = $item.find('div:first').text(); // The emoji character
-      var descriptionText = $item.find('span').attr('data-i18n') || $item.find('span').text();
-
-      // Get the translated text from i18next if available
-      if (descriptionText && descriptionText.startsWith('smileys.') ||
-          descriptionText.startsWith('people.') ||
-          descriptionText.startsWith('animals.') ||
-          descriptionText.startsWith('food.') ||
-          descriptionText.startsWith('travel.') ||
-          descriptionText.startsWith('activities.') ||
-          descriptionText.startsWith('objects.') ||
-          descriptionText.startsWith('symbols.') ||
-          descriptionText.startsWith('flags.')) {
-        descriptionText = i18next.t(descriptionText);
-      }
-
-      // Check if search term matches emoji, description, or keywords
-      var matches = emojiText.toLowerCase().includes(searchTerm) ||
-                   descriptionText.toLowerCase().includes(searchTerm) ||
-                   (descriptionText && descriptionText.split(' | ').some(function(keyword) {
-                     return keyword.toLowerCase().includes(searchTerm);
-                   }));
-
-      if (matches) {
-        $item.show();
-        visibleCount++;
-      } else {
-        $item.hide();
-      }
-    });
-
-    // Show/hide entire accordion sections based on whether they have visible items
-    $('.accordion').each(function() {
-      var $accordion = $(this);
-      var $content = $accordion.find('.accordion__content');
-      var hasVisibleItems = $content.find('> div:visible').length > 0;
-
-      if (hasVisibleItems) {
-        $accordion.show();
-        // Auto-expand sections with matches
-        if (!$content.is(':visible')) {
-          $accordion.find('.accordion__button').click();
-        }
-      } else {
-        $accordion.hide();
-      }
-    });
-  }
-
-  // Search input event listeners
-  searchInput.on('input', function() {
-    performSearch();
-  });
-
-  searchInput.on('keydown', function(e) {
-    if (e.key === 'Escape') {
-      searchInput.val('');
-      performSearch();
-      searchInput.blur();
-    }
-  });
-
-  // Clear button functionality
-  clearButton.on('click', function() {
-    searchInput.val('');
-    performSearch();
-    searchInput.focus();
-  });
-
-  // Focus search input on Ctrl+F or Cmd+F
-  $(document).on('keydown', function(e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'f') {
-      e.preventDefault();
-      searchInput.focus();
-      searchInput.select();
-    }
-  });
-
   i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
@@ -175,11 +119,11 @@ $(function () {
         en: {
           translation: {
             language: {
-                text: "Language: ",
-                huTitle: "Hungarian",
-                huLogo: "🇭🇺",
-                enTitle: "English",
-                enLogo: "🇬🇧",
+              text: "Language: ",
+              huTitle: "Hungarian",
+              huLogo: "🇭🇺",
+              enTitle: "English",
+              enLogo: "🇬🇧"
             },
             modal: {
               text: "copy & paste"
@@ -194,600 +138,65 @@ $(function () {
               step3: "copy emoji",
             },
             smileys: {
-              catface1: "grinning cat",
-              catface2: "grinning cat with smiling eyes",
-              catface3: "cat with tears of joy",
-              catface4: "smiling cat with heart-eyes",
-              catface5: "cat with wry smile",
-              catface6: "kissing cat",
-              catface7: "weary cat",
-              catface8: "crying cat",
-              catface9: "pouting cat",
-              faceaffection1: "smiling face with hearts | 3 | adore | crush | face | heart | hearts | ily | love | romance | smile | smiling | you",
-              faceaffection2: "smiling face with heart-eyes | 143 | bae | eye | face | feels | heart-eyes | hearts | ily | kisses | love | romance | romantic | smile | xoxo",
-              faceaffection3: "star-struck | excited | eyes | face | grinning | smile | star | star-struck | starry-eyed | wow",
-              faceaffection4: "face blowing a kiss | adorbs | bae | blowing | face | flirt | heart | ily | kiss | love | lover | miss | muah | romantic | smooch | xoxo | you",
-              faceaffection5: "kissing face | 143 | date | dating | face | flirt | ily | kiss | love | smooch | smooches | xoxo | you",
-              faceaffection6: "smiling face | face | happy | outlined | relaxed | smile | smiling",
-              faceaffection7: "kissing face with closed eyes | 143 | bae | blush | closed | date | dating | eye | eyes | face | flirt | ily | kisses | kissing | smooches | xoxo",
-              faceaffection8: "kissing face with smiling eyes | 143 | closed | date | dating | eye | eyes | face | flirt | ily | kiss | kisses | kissing | love | night | smile | smiling",
-              faceaffection9: "smiling face with tear | face | glad | grateful | happy | joy | pain | proud | relieved | smile | smiley | smiling | tear | touched",
-              faceconcerned1: "confused face",
-              faceconcerned10: "pleading face",
-              faceconcerned11: "face holding back tears",
-              faceconcerned12: "frowning face with open mouth",
-              faceconcerned13: "anguished face",
-              faceconcerned14: "fearful face",
-              faceconcerned15: "anxious face with sweat",
-              faceconcerned16: "sad but relieved face",
-              faceconcerned17: "crying face",
-              faceconcerned18: "loudly crying face",
-              faceconcerned19: "face screaming in fear",
-              faceconcerned2: "face with diagonal mouth",
-              faceconcerned20: "confounded face",
-              faceconcerned21: "persevering face",
-              faceconcerned22: "disappointed face",
-              faceconcerned23: "downcast face with sweat",
-              faceconcerned24: "weary face",
-              faceconcerned25: "tired face",
-              faceconcerned26: "yawning face",
-              faceconcerned3: "worried face",
-              faceconcerned4: "slightly frowning face",
-              faceconcerned5: "frowning face",
-              faceconcerned6: "face with open mouth",
-              faceconcerned7: "hushed face",
-              faceconcerned8: "astonished face",
-              faceconcerned9: "flushed face",
-              facecostume1: "clown face",
-              facecostume2: "ogre",
-              facecostume3: "goblin",
-              facecostume4: "ghost",
-              facecostume5: "alien",
-              facecostume6: "alien monster",
-              facecostume7: "robot",
-              faceglasses1: "smiling face with sunglasses",
-              faceglasses2: "nerd face",
-              faceglasses3: "face with monocle",
-              facehand1: "smiling face with open hands | face | hands | hug | hugging | open | smiling",
-              facehand2: "face with hand over mouth | face | giggle | giggling | hand | mouth | oops | realization | secret | shock | sudden | surprise | whoops | sudden realization",
-              facehand3: "face with open eyes and hand over mouth | amazement | awe | disbelief | embarrass | eyes | face | gasp | hand | mouth | omg | open | over | quiet | scared | shock | surprise",
-              facehand4: "face with peeking eye | captivated | embarrass | eye | face | hide | hiding | peek | peeking | peep | scared | shy | stare",
-              facehand5: "shushing face | face | quiet | shh | shush | shushing",
-              facehand6: "thinking face | chin | consider | face | hmm | ponder | pondering | thinking | wondering",
-              facehand7: "saluting face | face | good | luck | ma'am | OK | respect | salute | saluting | sir | troops | yes",
-              facehat1: "cowboy hat face",
-              facehat2: "partying face",
-              facehat3: "disguised face",
-              facenegative1: "face with steam from nose",
-              facenegative2: "enraged face",
-              facenegative3: "angry face",
-              facenegative4: "face with symbols on mouth",
-              facenegative5: "smiling face with horns",
-              facenegative6: "angry face with horns",
-              facenegative7: "skull",
-              faceneutralskeptical1: "zipper-mouth face",
-              faceneutralskeptical10: "face with rolling eyes",
-              faceneutralskeptical11: "grimacing face",
-              faceneutralskeptical12: "face exhaling",
-              faceneutralskeptical13: "lying face",
-              faceneutralskeptical14: "shaking face",
-              faceneutralskeptical15: "head shaking horizontally",
-              faceneutralskeptical16: "head shaking vertically",
-              faceneutralskeptical2: "face with raised eyebrow",
-              faceneutralskeptical3: "neutral face",
-              faceneutralskeptical4: "expressionless face",
-              faceneutralskeptical5: "face without mouth",
-              faceneutralskeptical6: "dotted line face",
-              faceneutralskeptical7: "face in clouds",
-              faceneutralskeptical8: "smirking face",
-              faceneutralskeptical9: "unamused face",
-              facesleepy1: "relieved face",
-              facesleepy2: "pensive face",
-              facesleepy3: "sleepy face",
-              facesleepy4: "drooling face",
-              facesleepy5: "sleeping face",
-              facesleepy6: "face with bags under eyes",
-              facesmiling1: "grinning face | cheerful | cheery | face | grin | grinning | happy | laugh | nice | smile | smiling | teeth",
-              facesmiling10: "upside-down face | face | hehe | smile | upside-down",
-              facesmiling11: "melting face | disappear | dissolve | embarrassed | face | haha | heat | hot | liquid | lol | melt | melting | sarcasm | sarcastic",
-              facesmiling12: "winking face | face | flirt | heartbreaker | sexy | slide | tease | wink | winking | winks",
-              facesmiling13: "smiling face with smiling eyes | blush | eye | eyes | face | glad | satisfied | smile | smiling",
-              facesmiling14: "smiling face with halo | angel | angelic | angels | blessed | face | fairy | fairytale | fantasy | halo | happy | innocent | peaceful | smile | smiling | spirit | tale",
-              facesmiling2: "grinning face with big eyes | awesome | big | eyes | face | grin | grinning | happy | mouth | open | smile | smiling | teeth | yay",
-              facesmiling3: "grinning face with smiling eyes | eye | eyes | face | grin | grinning | happy | laugh | lol | mouth | open | smile | smiling",
-              facesmiling4: "beaming face with smiling eyes | beaming | eye | eyes | face | grin | grinning | happy | nice | smile | smiling | teeth",
-              facesmiling5: "grinning squinting face | closed | eyes | face | grinning | haha | hahaha | happy | laugh | lol | mouth | open | rofl | smile | smiling | squinting",
-              facesmiling6: "grinning face with sweat | cold | dejected | excited | face | grinning | mouth | nervous | open | smile | smiling | stress | stressed | sweat",
-              facesmiling7: "rolling on the floor laughing | crying | face | floor | funny | haha | happy | hehe | hilarious | joy | laugh | lmao | lol | rofl | roflmao | rolling | tear",
-              facesmiling8: "face with tears of joy | crying | face | feels | funny | haha | happy | hehe | hilarious | joy | laugh | lmao | lol | rofl | roflmao | tear",
-              facesmiling9: "slightly smiling face | face | happy | slightly | smile | smiling",
-              facetongue1: "face savoring food | delicious | eat | face | food | full | hungry | savor | smile | smiling | tasty | um | yum | yummy",
-              facetongue2: "face with tongue | awesome | cool | face | nice | party | stuck-out | sweet | tongue",
-              facetongue3: "winking face with tongue | crazy | epic | eye | face | funny | joke | loopy | nutty | party | stuck-out | tongue | wacky | weirdo | wink | winking | yolo",
-              facetongue4: "zany face | crazy | eye | eyes | face | goofy | large | small | zany",
-              facetongue5: "squinting face with tongue | closed | eye | eyes | face | gross | horrible | omg | squinting | stuck-out | taste | tongue | whatever | yolo",
-              facetongue6: "money-mouth face | face | money | money-mouth | mouth | paid",
-              faceunwell1: "face with medical mask",
-              faceunwell10: "face with crossed-out eyes",
-              faceunwell11: "face with spiral eyes",
-              faceunwell12: "exploding head",
-              faceunwell2: "face with thermometer",
-              faceunwell3: "face with head-bandage",
-              faceunwell4: "nauseated face",
-              faceunwell5: "face vomiting",
-              faceunwell6: "sneezing face",
-              faceunwell7: "hot face",
-              faceunwell8: "cold face",
-              faceunwell9: "woozy face",
-              monkeyface1: "see-no-evil monkey",
-              monkeyface2: "hear-no-evil monkey",
-              monkeyface3: "speak-no-evil monkey"
-            },
-            people: {
-              bodyparts1: "thumbs up",
-              bodyparts10: "open hands with palms up",
-              bodyparts11: "handshake",
-              bodyparts12: "right facing fist",
-              bodyparts13: "left facing fist",
-              bodyparts14: "heart hands",
-              bodyparts2: "thumbs down",
-              bodyparts3: "raised fist",
-              bodyparts4: "oncoming fist",
-              bodyparts5: "clapping hands",
-              bodyparts6: "raising hands",
-              bodyparts7: "open hands",
-              bodyparts8: "leftwards pushing hand",
-              bodyparts9: "rightwards pushing hand",
-              person1: "waving hand",
-              person10: "crossed fingers",
-              person11: "hand with index and middle fingers crossed",
-              person12: "love-you gesture",
-              person13: "sign of the horns",
-              person14: "call me hand",
-              person2: "raised back of hand",
-              person3: "hand with fingers splayed",
-              person4: "raising hand",
-              person5: "vulcan salute",
-              person6: "ok hand",
-              person7: "pinched fingers",
-              person8: "pinching hand",
-              person9: "victory hand"
-            },
-            animals: {
-              animalamphibian1: "frog",
-              animalbird1: "eagle",
-              animalbird2: "duck",
-              animalbird3: "owl",
-              animalbird4: "bat",
-              animalmammal1: "dog face",
-              animalmammal10: "tiger face",
-              animalmammal2: "cat face",
-              animalmammal3: "mouse face",
-              animalmammal4: "hamster",
-              animalmammal5: "rabbit face",
-              animalmammal6: "fox",
-              animalmammal7: "bear",
-              animalmammal8: "panda",
-              animalmammal9: "koala"
-            },
-            food: {
-              drink1: "teacup without handle",
-              drink10: "bottle with popping cork",
-              drink11: "beverage box",
-              drink2: "hot beverage",
-              drink3: "sake",
-              drink4: "beer mug",
-              drink5: "clinking beer mugs",
-              drink6: "clinking glasses",
-              drink7: "wine glass",
-              drink8: "cocktail glass",
-              drink9: "tropical drink",
-              foodfruit1: "red apple",
-              foodfruit2: "orange",
-              foodfruit3: "lemon",
-              foodfruit4: "banana",
-              foodfruit5: "watermelon",
-              foodfruit6: "grapes",
-              foodfruit7: "strawberry",
-              foodfruit8: "melon",
-              foodprepared1: "pizza",
-              foodprepared2: "hamburger",
-              foodprepared3: "french fries",
-              foodprepared4: "hot dog",
-              foodprepared5: "taco",
-              foodprepared6: "burrito",
-              foodvegetable1: "cucumber",
-              foodvegetable2: "avocado",
-              foodvegetable3: "broccoli",
-              foodvegetable4: "leafy green",
-              foodvegetable5: "hot pepper",
-              foodvegetable6: "corn"
-            },
-            travel: {
-              placebuilding1: "house",
-              placebuilding10: "convenience store",
-              placebuilding2: "house with garden",
-              placebuilding3: "office building",
-              placebuilding4: "japanese post office",
-              placebuilding5: "european post office",
-              placebuilding6: "hospital",
-              placebuilding7: "bank",
-              placebuilding8: "atm sign",
-              placebuilding9: "hotel",
-              placegeographic1: "world map",
-              placegeographic2: "moai",
-              placemap1: "globe showing americas",
-              placemap2: "globe showing americas",
-              placemap3: "globe showing asia-australia",
-              placemap4: "globe with meridians",
-              vehicleair1: "airplane",
-              vehicleair2: "airplane departure",
-              vehicleair3: "airplane arrival",
-              vehicleair4: "helicopter",
-              vehicleair5: "small airplane",
-              vehiclecar1: "automobile",
-              vehiclecar2: "taxi",
-              vehiclecar3: "sport utility vehicle",
-              vehiclecar4: "bus",
-              vehiclecar5: "trolleybus"
-            },
-            activities: {
-              awardmedal1: "trophy",
-              awardmedal2: "sports medal",
-              awardmedal3: "first place medal",
-              awardmedal4: "second place medal",
-              awardmedal5: "third place medal",
-              event1: "jack-o-lantern",
-              event2: "christmas tree",
-              event3: "fireworks",
-              event4: "sparkler",
-              event5: "firecracker",
-              event6: "sparkles",
-              event7: "balloon",
-              event8: "party popper",
-              event9: "confetti ball",
-              game1: "spade suit",
-              game2: "heart suit",
-              game3: "diamond suit",
-              game4: "club suit",
-              game5: "chess pawn",
-              game6: "direct hit",
-              game7: "game die",
-              game8: "video game",
-              game9: "slot machine"
-            },
-            objects: {
-              objectbag1: "briefcase",
-              objectbag2: "graduation cap",
-              objectbag3: "ring",
-              objectbag4: "gem stone",
-              objectclothing1: "glasses",
-              objectclothing10: "socks",
-              objectclothing2: "sunglasses",
-              objectclothing3: "goggles",
-              objectclothing4: "necktie",
-              objectclothing5: "t-shirt",
-              objectclothing6: "jeans",
-              objectclothing7: "scarf",
-              objectclothing8: "gloves",
-              objectclothing9: "coat",
-              objectoffice1: "pencil",
-              objectoffice2: "black nib",
-              objectoffice3: "fountain pen",
-              objectoffice4: "pen",
-              objectoffice5: "paintbrush",
-              objectoffice6: "crayon",
-              objectoffice7: "memo",
-              objectshoe1: "manual shoe",
-              objectshoe2: "running shoe",
-              objectshoe3: "hiking boot",
-              objectshoe4: "flat shoe",
-              objectshoe5: "high-heeled shoe",
-              objectshoe6: "woman's sandal"
-            },
-            symbols: {
-              emotion1: "kiss mark",
-              emotion10: "heart decoration",
-              emotion11: "heavy heart exclamation",
-              emotion12: "speech balloon",
-              emotion13: "eye in speech bubble",
-              emotion14: "left speech bubble",
-              emotion15: "right anger bubble",
-              emotion2: "love letter",
-              emotion3: "cupid",
-              emotion4: "heart with ribbon",
-              emotion5: "sparkling heart",
-              emotion6: "growing heart",
-              emotion7: "beating heart",
-              emotion8: "revolving hearts",
-              emotion9: "two hearts",
-              heart1: "red heart",
-              heart10: "white heart",
-              heart11: "handshake",
-              heart2: "orange heart",
-              heart3: "yellow heart",
-              heart4: "green heart",
-              heart5: "blue heart",
-              heart6: "purple heart",
-              heart7: "black heart",
-              heart8: "white heart",
-              heart9: "brown heart",
-              warning1: "warning",
-              warning2: "prohibited",
-              warning3: "no pedestrians",
-              warning4: "no littering",
-              warning5: "no bicycles",
-              warning6: "non-potable water",
-              warning7: "no mobile phones"
-            },
-            flags: {
-              specialflag1: "chequered flag",
-              specialflag2: "triangular flag",
-              specialflag3: "crossed flags",
-              specialflag4: "black flag",
-              specialflag5: "white flag",
-              specialflag6: "rainbow flag",
-              specialflag7: "transgender flag",
-              specialflag8: "pirate flag",
-              countryflagA1: "Ascension Island",
-              countryflagA2: "Andorra",
-              countryflagA3: "United Arab Emirates",
-              countryflagA4: "Afghanistan",
-              countryflagA5: "Antigua & Barbuda",
-              countryflagA6: "Anguilla",
-              countryflagA7: "Albania",
-              countryflagA8: "Armenia",
-              countryflagA9: "Angola",
-              countryflagA10: "Antarctica",
-              countryflagA11: "Argentina",
-              countryflagA12: "American Samoa",
-              countryflagA13: "Austria",
-              countryflagA14: "Australia",
-              countryflagA15: "Aruba",
-              countryflagA16: "Åland Islands",
-              countryflagA17: "Azerbaijan",
-              countryflagB1: "Bosnia & Herzegovina",
-              countryflagB2: "Barbados",
-              countryflagB3: "Bangladesh",
-              countryflagB4: "Belgium",
-              countryflagB5: "Burkina Faso",
-              countryflagB6: "Bulgaria",
-              countryflagB7: "Bahrain",
-              countryflagB8: "Burundi",
-              countryflagB9: "Benin",
-              countryflagB10: "St. Barthélemy",
-              countryflagB11: "Bermuda",
-              countryflagB12: "Brunei",
-              countryflagB13: "Bolivia",
-              countryflagB14: "Caribbean",
-              countryflagB15: "Brazil",
-              countryflagB16: "Bahamas",
-              countryflagB17: "Bhutan",
-              countryflagB18: "Bouvet Island",
-              countryflagB19: "Botswana",
-              countryflagB20: "Belarus",
-              countryflagB21: "Belize",
-              countryflagC1: "Canada",
-              countryflagC2: "Cocos",
-              countryflagC3: "Congo - Kinshasa",
-              countryflagC4: "Central African Republic",
-              countryflagC5: "Congo - Brazzaville",
-              countryflagC6: "Switzerland",
-              countryflagC7: "Côte d'Ivoire",
-              countryflagC8: "Cook Islands",
-              countryflagC9: "Chile",
-              countryflagC10: "Cameroon",
-              countryflagC11: "China",
-              countryflagC12: "Colombia",
-              countryflagC13: "Clipperton Island",
-              countryflagC14: "Sark",
-              countryflagC15: "Costa Rica",
-              countryflagC16: "Cuba",
-              countryflagC17: "Cape Verde",
-              countryflagC18: "Curaçao",
-              countryflagC19: "Christmas Island",
-              countryflagC20: "Cyprus",
-              countryflagC21: "Czechia",
-              countryflagD1: "Germany",
-              countryflagD2: "Diego Garcia",
-              countryflagD3: "Djibouti",
-              countryflagD4: "Denmark",
-              countryflagD5: "Dominica",
-              countryflagD6: "Dominican Republic",
-              countryflagD7: "Algeria",
-              countryflagE1: "Ceuta & Melilla",
-              countryflagE2: "Ecuador",
-              countryflagE3: "Estonia",
-              countryflagE4: "Egypt",
-              countryflagE5: "Western Sahara",
-              countryflagE6: "Eritrea",
-              countryflagE7: "Spain",
-              countryflagE8: "Ethiopia",
-              countryflagE9: "European Union",
-              countryflagF1: "Finland",
-              countryflagF2: "Fiji",
-              countryflagF3: "Falkland Islands",
-              countryflagF4: "Micronesia",
-              countryflagF5: "Faroe Islands",
-              countryflagF6: "France",
-              countryflagG1: "Gabon",
-              countryflagG2: "United Kingdom",
-              countryflagG3: "Grenada",
-              countryflagG4: "Georgia",
-              countryflagG5: "French Guiana",
-              countryflagG6: "Guernsey",
-              countryflagG7: "Ghana",
-              countryflagG8: "Gibraltar",
-              countryflagG9: "Greenland",
-              countryflagG10: "Gambia",
-              countryflagG11: "Guinea",
-              countryflagG12: "Guadeloupe",
-              countryflagG13: "Equatorial Guinea",
-              countryflagG14: "Greece",
-              countryflagG15: "South Georgia & South Sandwich Islands",
-              countryflagG16: "Guatemala",
-              countryflagG17: "Guam",
-              countryflagG18: "Guinea-Bissau",
-              countryflagG19: "Guyana",
-              countryflagH1: "Hong Kong SAR China",
-              countryflagH2: "Heard & MacDonald Islands",
-              countryflagH3: "Honduras",
-              countryflagH4: "Croatia",
-              countryflagH5: "Haiti",
-              countryflagH6: "Hungary",
-              countryflagI1: "Canary Islands",
-              countryflagI2: "Indonesia",
-              countryflagI3: "Ireland",
-              countryflagI4: "Israel",
-              countryflagI5: "Isle of Man",
-              countryflagI6: "India",
-              countryflagI7: "British Indian Ocean Territory",
-              countryflagI8: "Iraq",
-              countryflagI9: "Iran",
-              countryflagI10: "Iceland",
-              countryflagI11: "Italy",
-              countryflagJ1: "Jersey",
-              countryflagJ2: "Jamaica",
-              countryflagJ3: "Jordan",
-              countryflagJ4: "Japan",
-              countryflagK1: "Kenya",
-              countryflagK2: "Kyrgyzstan",
-              countryflagK3: "Cambodia",
-              countryflagK4: "Kiribati",
-              countryflagK5: "Comoros",
-              countryflagK6: "Kitts & Nevis",
-              countryflagK7: "North Korea",
-              countryflagK8: "South Korea",
-              countryflagK9: "Kuwait",
-              countryflagK10: "Cayman Islands",
-              countryflagK11: "Kazakhstan",
-              countryflagL1: "Laos",
-              countryflagL2: "Lebanon",
-              countryflagL3: "St. Lucia",
-              countryflagL4: "Liechtenstein",
-              countryflagL5: "Sri Lanka",
-              countryflagL6: "Liberia",
-              countryflagL7: "Lesotho",
-              countryflagL8: "Lithuania",
-              countryflagL9: "Luxembourg",
-              countryflagL10: "Latvia",
-              countryflagL11: "Libya",
-              countryflagM1: "Morocco",
-              countryflagM2: "Monaco",
-              countryflagM3: "Moldova",
-              countryflagM4: "Montenegro",
-              countryflagM5: "St. Martin",
-              countryflagM6: "Madagascar",
-              countryflagM7: "Marshall Islands",
-              countryflagM8: "North Macedonia",
-              countryflagM9: "Mali",
-              countryflagM10: "Myanmar (Burma)",
-              countryflagM11: "Mongolia",
-              countryflagM12: "Macao SAR China",
-              countryflagM13: "Northern Mariana Islands",
-              countryflagM14: "Martinique",
-              countryflagM15: "Mauritania",
-              countryflagM16: "Montserrat",
-              countryflagM17: "Malta",
-              countryflagM18: "Mauritius",
-              countryflagM19: "Maldives",
-              countryflagM20: "Malawi",
-              countryflagM21: "Mexico",
-              countryflagM22: "Malaysia",
-              countryflagM23: "Mozambique",
-              countryflagN1: "Namibia",
-              countryflagN2: "New Caledonia",
-              countryflagN3: "Niger",
-              countryflagN4: "Norfolk Island",
-              countryflagN5: "Nigeria",
-              countryflagN6: "Nicaragua",
-              countryflagN7: "Netherlands",
-              countryflagN8: "Norway",
-              countryflagN9: "Nepal",
-              countryflagN10: "Nauru",
-              countryflagN11: "Niue",
-              countryflagN12: "New Zealand",
-              countryflagO1: "Oman",
-              countryflagP1: "Panama",
-              countryflagP2: "Peru",
-              countryflagP3: "French Polynesia",
-              countryflagP4: "Papua New Guinea",
-              countryflagP5: "Philippines",
-              countryflagP6: "Pakistan",
-              countryflagP7: "Poland",
-              countryflagP8: "St. Pierre & Miquelon",
-              countryflagP9: "Pitcairn Islands",
-              countryflagP10: "Puerto Rico",
-              countryflagP11: "Palestinian Territories",
-              countryflagP12: "Portugal",
-              countryflagP13: "Palau",
-              countryflagP14: "Paraguay",
-              countryflagQ1: "Qatar",
-              countryflagR1: "Réunion",
-              countryflagR2: "Romania",
-              countryflagR3: "Serbia",
-              countryflagR4: "Russia",
-              countryflagR5: "Rwanda",
-              countryflagS1: "Saudi Arabia",
-              countryflagS2: "Solomon Islands",
-              countryflagS3: "Seychelles",
-              countryflagS4: "Sudan",
-              countryflagS5: "Sweden",
-              countryflagS6: "Singapore",
-              countryflagS7: "St. Helena",
-              countryflagS8: "Slovenia",
-              countryflagS9: "Svalbard & Jan Mayen",
-              countryflagS10: "Slovakia",
-              countryflagS11: "Sierra Leone",
-              countryflagS12: "San Marino",
-              countryflagS13: "Senegal",
-              countryflagS14: "Somalia",
-              countryflagS15: "Suriname",
-              countryflagS16: "South Sudan",
-              countryflagS17: "São Tomé & Príncipe",
-              countryflagS18: "El Salvador",
-              countryflagS19: "Sint Maarten",
-              countryflagS20: "Syria",
-              countryflagS21: "Eswatini",
-              countryflagT1: "Tristan da Cunha",
-              countryflagT2: "Turks & Caicos Islands",
-              countryflagT3: "Chad",
-              countryflagT4: "French Southern Territories",
-              countryflagT5: "Togo",
-              countryflagT6: "Thailand",
-              countryflagT7: "Tajikistan",
-              countryflagT8: "Tokelau",
-              countryflagT9: "Timor-Leste",
-              countryflagT10: "Turkmenistan",
-              countryflagT11: "Tunisia",
-              countryflagT12: "Tonga",
-              countryflagT13: "Türkiye",
-              countryflagT14: "Trinidad & Tobago",
-              countryflagT15: "Tuvalu",
-              countryflagT16: "Taiwan",
-              countryflagT17: "Tanzania",
-              countryflagU1: "Ukraine",
-              countryflagU2: "Uganda",
-              countryflagU3: "U.S. Outlying Islands",
-              countryflagU4: "United Nations",
-              countryflagU5: "United States",
-              countryflagU6: "Uruguay",
-              countryflagU7: "Uzbekistan",
-              countryflagV1: "Vatican City",
-              countryflagV2: "St. Vincent & Grenadines",
-              countryflagV3: "Venezuela",
-              countryflagV4: "British Virgin Islands",
-              countryflagV5: "U.S. Virgin Islands",
-              countryflagV6: "Vietnam",
-              countryflagV7: "Vanuatu",
-              countryflagW1: "Wallis & Futuna",
-              countryflagW2: "Samoa",
-              countryflagX1: "Kosovo",
-              countryflagY1: "Yemen",
-              countryflagY2: "Mayotte",
-              countryflagZ1: "South Africa",
-              countryflagZ2: "Zambia",
-              countryflagZ3: "Zimbabwe"
+              faceSmiling1: "grinning face",
+              faceSmiling2: "grinning face with big eyes",
+              faceSmiling3: "grinning face with smiling eyes",
+              faceSmiling4: "beaming face with smiling eyes",
+              faceSmiling5: "grinning squinting face",
+              faceSmiling6: "grinning face with sweat",
+              faceSmiling7: "rolling on the floor laughing",
+              faceSmiling8: "face with tears of joy",
+              faceSmiling9: "slightly smiling face",
+              faceSmiling10: "upside-down face",
+              faceSmiling11: "melting face",
+              faceSmiling12: "winking face",
+              faceSmiling13: "smiling face with smiling eyes",
+              faceSmiling14: "smiling face with halo",
+
+              faceAffection1: "smiling face with hearts",
+              faceAffection2: "smiling face with heart-eyes",
+              faceAffection3: "star-struck",
+              faceAffection4: "face blowing a kiss",
+              faceAffection5: "kissing face",
+              faceAffection6: "smiling face with tear",
+
+              faceTongue1: "face savoring food",
+              faceTongue2: "face with tongue",
+              faceTongue3: "winking face with tongue",
+              faceTongue4: "zany face",
+              faceTongue5: "squinting face with tongue",
+              faceTongue6: "money-mouth face",
+
+              faceHand1: "smiling face with open hands",
+              faceHand2: "face with hand over mouth",
+              faceHand3: "face with open eyes and hand over mouth",
+              faceHand4: "face with peeking eye",
+              faceHand5: "shushing face",
+              faceHand6: "thinking face",
+              faceHand7: "saluting face",
+
+              faceneutral1: "zipper-mouth face",
+              faceneutral2: "face with raised eyebrow",
+              faceneutral3: "neutral face",
+              faceneutral4: "expressionless face",
+              faceneutral5: "face without mouth",
+              faceneutral6: "dotted line face",
+              faceneutral7: "face in clouds",
+              faceneutral8: "smirking face",
+              faceneutral9: "unamused face",
+              faceneutral10: "face with rolling eyes",
+              faceneutral11: "grimacing face",
+              faceneutral12: "face exhaling",
+              faceneutral13: "lying face",
+
+              faceSleepy1: "shaking face",
+              faceSleepy2: "head shaking horizontally",
+              faceSleepy3: "head shaking vertically",
+              faceSleepy4: "relieved face",
+              faceSleepy5: "pensive face",
+              faceSleepy6: "sleepy face",
+              faceSleepy7: "drooling face",
+              faceSleepy8: "sleeping face"
             }
           }
         }
